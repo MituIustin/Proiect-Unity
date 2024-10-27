@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\denis\\Proiect-Unity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D3E983F-8F97-91C0-6216-3A4A10B2E126}|Assembly-CSharp-Editor.csproj|c:\\users\\denis\\proiect-unity\\assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3E983F-8F97-91C0-6216-3A4A10B2E126}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReadmeEditor.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "ToolTip": "C:\\Users\\denis\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "RelativeToolTip": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T16:51:10.952Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
