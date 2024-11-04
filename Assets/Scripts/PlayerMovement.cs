@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
+    Animator animator;
 
     float movementSpeedHorizontal = 5f;
     float movementSpeedVertical = 3f;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -34,6 +36,19 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+        
+        bool isRunning = (horizontal != 0) || (vertical != 0);
+        animator.SetBool("IsRunning", isRunning);
+
+        if (horizontal < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else if (horizontal > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
         direction = new Vector3(horizontal, 0, vertical).normalized;
         direction.x *= movementSpeedHorizontal;
         direction.z *= movementSpeedVertical;
@@ -58,9 +73,11 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Dash()
     {
         isDashing = true;
+        animator.SetBool("IsDashing", true);
         yield return new WaitForSeconds(dashDuration);
         canDash = false;
         dashCooldownTimer = 0f;
         isDashing = false;
+        animator.SetBool("IsDashing", false);
     }
 }
