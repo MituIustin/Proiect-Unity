@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Options.cs" />
     <Compile Include="Assets\Scripts\PlayerController_ForNow.cs" />
     <Compile Include="Assets\Scripts\VolumeSlider.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerController(ForNow).cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
   </ItemGroup>
