@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - VolumeSlider
+  - Enemy
   layers:
   - Default
   - TransparentFX
