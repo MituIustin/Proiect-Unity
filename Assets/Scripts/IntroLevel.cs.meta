@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 26f9a245335aeda47a7f75518b509172
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerPrefab: {fileID: 7410544157382700458, guid: 051d85b5a46bbb74ca5281c42bbc9d3e, type: 3}
+  - enemy1Prefab: {fileID: 7410544157382700458, guid: 5cf30ee0d101045479d7494bcb209ce9, type: 3}
+  - enemy2Prefab: {fileID: 7410544157382700458, guid: f0a332c4def456742b5879adef3803c5, type: 3}
+  - camera: {fileID: 5212100823036827761, guid: 90a94ad5b79d44369bea6cd1ea01d79f, type: 3}
+  - UiPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
