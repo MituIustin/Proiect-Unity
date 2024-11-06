@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3840 2160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7bb43;
+      }
+
+      .cls-2 {
+        fill: #f7c154;
+      }
+
+      .cls-3 {
+        fill: #eda532;
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-5 {
+        fill: #fcbc2b;
+      }
+
+      .cls-6 {
+        fill: #ffcb64;
+      }
+
+      .cls-7 {
+        fill: #f7ab14;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="2946" cy="404" fx="2946" fy="404" r="197" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffd1"/>
+      <stop offset="0" stop-color="#f7a90b"/>
+      <stop offset=".39" stop-color="#f5bb45"/>
+      <stop offset=".69" stop-color="#f4c76b"/>
+      <stop offset=".84" stop-color="#f4cc7a"/>
+      <stop offset=".9" stop-color="#f3c15b"/>
+      <stop offset="1" stop-color="#f2aa19"/>
+    </radialGradient>
+  </defs>
+  <g id="DaySky">
+    <rect class="cls-3" width="3840" height="2160"/>
+  </g>
+  <g id="Sun1">
+    <circle class="cls-6" cx="2946" cy="404" r="197"/>
+    <circle class="cls-2" cx="2946" cy="404" r="183"/>
+    <circle class="cls-1" cx="2946" cy="404" r="170"/>
+    <circle class="cls-5" cx="2946" cy="404" r="157"/>
+    <circle class="cls-7" cx="2946" cy="404" r="145"/>
+  </g>
+  <g id="Sun2">
+    <circle class="cls-4" cx="2946" cy="404" r="197"/>
+  </g>
+</svg>

@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
     Animator animator;
+    SpriteRenderer spriteRenderer;
 
     float movementSpeedHorizontal = 5f;
     float movementSpeedVertical = 3f;
@@ -12,10 +13,10 @@ public class PlayerMovement : MonoBehaviour
     float dashDuration = 0.1f;
     float dashCooldown = 1.5f;
     float dashCooldownTimer = 1.5f;
-    
+
     bool isDashing = false;
     bool canDash = true;
-    
+
     Vector3 direction;
     Vector3 dashDirection;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
     }
 
     private void FixedUpdate()
@@ -36,17 +38,17 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        
+
         bool isRunning = (horizontal != 0) || (vertical != 0);
         animator.SetBool("IsRunning", isRunning);
 
         if (horizontal < 0)
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            spriteRenderer.flipX = true; 
         }
         else if (horizontal > 0)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            spriteRenderer.flipX = false; 
         }
 
         direction = new Vector3(horizontal, 0, vertical).normalized;
