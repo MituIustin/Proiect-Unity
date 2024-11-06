@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.tif,*.asset,*.png filter=lfs diff=lfs merge=lfs -text
