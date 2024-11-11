@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    PlayerCombat playerCombat;
 
     float movementSpeedHorizontal = 5f;
     float movementSpeedVertical = 3f;
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>(); 
+        playerCombat = GetComponent<PlayerCombat>();
     }
 
     private void FixedUpdate()
@@ -68,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && canDash)
         {
             dashDirection = direction;
+            playerCombat.SetCanHit(false);
             StartCoroutine(Dash());
         }
     }
@@ -81,5 +84,6 @@ public class PlayerMovement : MonoBehaviour
         dashCooldownTimer = 0f;
         isDashing = false;
         animator.SetBool("IsDashing", false);
+        playerCombat.SetCanHit(true);
     }
 }
