@@ -46,11 +46,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontal < 0)
         {
-            spriteRenderer.flipX = true; 
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
         else if (horizontal > 0)
         {
-            spriteRenderer.flipX = false; 
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
 
         direction = new Vector3(horizontal, 0, vertical).normalized;
