@@ -3,24 +3,15 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     Animator animator;
-    public Collider swordHitbox;
+    public GameObject hitDetection;
 
     float lastClickedTime = 0f;
     float doubleClickThreshold = 0.5f;
 
     int health = 100;
-    int damage = 15;
 
     bool canHit = true;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == "Enemy")
-        {
-            //collision.gameObject.TakeDamage(damage);
-            Debug.Log("hit!\n");
-        }
-    }
 
     private void Awake()
     {
@@ -47,7 +38,7 @@ public class PlayerCombat : MonoBehaviour
                 animator.SetBool("IsAttackingTwice", false);
             }
 
-            swordHitbox.enabled = true;
+            hitDetection.SetActive(true);
             animator.SetBool("IsAttacking", true);
             lastClickedTime = Time.time;
         }
@@ -55,7 +46,7 @@ public class PlayerCombat : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             animator.SetBool("IsAttacking", false);
-            swordHitbox.enabled = false;
+            hitDetection.SetActive(false);
         }
     }
     

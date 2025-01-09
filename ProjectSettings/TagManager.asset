@@ -6,6 +6,7 @@ TagManager:
   tags:
   - VolumeSlider
   - Enemy
+  - Key
   layers:
   - Default
   - TransparentFX
