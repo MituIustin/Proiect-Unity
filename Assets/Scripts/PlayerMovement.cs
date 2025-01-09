@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     PlayerCombat playerCombat;
+    public GameObject UI;
+    GameObject _UI;
 
     float movementSpeedHorizontal = 5f;
     float movementSpeedVertical = 3f;
@@ -21,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
     Vector3 direction;
     Vector3 dashDirection;
 
+    void Start()
+    {
+        _UI = Instantiate(UI);
+    }
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -85,5 +91,17 @@ public class PlayerMovement : MonoBehaviour
         isDashing = false;
         animator.SetBool("IsDashing", false);
         playerCombat.SetCanHit(true);
+    }
+
+    public IEnumerator SetSpeed()
+    {
+        movementSpeedHorizontal = 7f;
+        movementSpeedVertical = 5f;
+        Debug.Log("START");
+        yield return new WaitForSeconds(15f);
+        Debug.Log("FINISH");
+        movementSpeedHorizontal = 5f;
+        movementSpeedVertical = 3f;
+
     }
 }

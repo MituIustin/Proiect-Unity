@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     float lastClickedTime = 0f;
     float doubleClickThreshold = 0.5f;
 
-    int health = 100;
+    int health = 60;
     int damage = 15;
 
     bool canHit = true;
@@ -60,6 +61,25 @@ public class PlayerCombat : MonoBehaviour
     }
     
     public int GetHealth() { return health; }  
+
+    public void SetHealth(int health_)
+    {
+        if (health <= 100 - health_)
+        {
+            health += health_;
+        }
+        else
+        {
+            health = 100;
+        }
+    }
+
+    public IEnumerator SetDamage()
+    {
+        damage = 25;
+        yield return new WaitForSeconds(15f);
+        damage = 15;
+    }
 
     public void SetCanHit(bool newCanHit) { canHit = newCanHit; }
 }
