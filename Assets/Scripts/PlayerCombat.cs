@@ -12,6 +12,8 @@ public class PlayerCombat : MonoBehaviour
     int health = 60;
     int damage = 15;
 
+    int coins = 0;
+
     bool canHit = true;
     private bool isAttacking = false;
 
@@ -83,7 +85,11 @@ public class PlayerCombat : MonoBehaviour
         health = Mathf.Min(health + health_, 100);
     }
 
-    public IEnumerator SetDamage()
+    public void PickUpDamageBoost()
+    {
+        StartCoroutine(SetDamage());
+    }
+    private IEnumerator SetDamage()
     {
         damage = 25;
         yield return new WaitForSeconds(15f);
@@ -91,4 +97,13 @@ public class PlayerCombat : MonoBehaviour
     }
 
     public void SetCanHit(bool newCanHit) { canHit = newCanHit; }
+
+    public void PickUpCoin()
+    {
+        coins++;
+    }
+    public int GetCoins()
+    {
+        return coins;
+    }
 }

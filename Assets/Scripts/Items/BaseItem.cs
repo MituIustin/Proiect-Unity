@@ -1,9 +1,13 @@
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public abstract class BaseItem : MonoBehaviour
 {
-    
+    public Sprite sprite;
+    public GameObject UI;
+    GameObject _UI;
     void Start()
     {
         
@@ -16,7 +20,9 @@ public abstract class BaseItem : MonoBehaviour
 
     public void SetUI()
     {
-
+        _UI = Instantiate(UI);
+        _UI.GetComponent<UnityEngine.UI.Image>().sprite = sprite;
+        _UI.transform.parent=GameObject.FindGameObjectWithTag("buffpanel").transform;
     }
 
     public void OnCollisionEnter(Collision collision)

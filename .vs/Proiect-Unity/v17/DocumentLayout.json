@@ -1,10 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\denis\\Proiect-Unity\\",
+  "WorkspaceRootPath": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D3E983F-8F97-91C0-6216-3A4A10B2E126}|Assembly-CSharp-Editor.csproj|c:\\users\\denis\\proiect-unity\\assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D3E983F-8F97-91C0-6216-3A4A10B2E126}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|c:\\users\\denis\\documents\\github\\proiect-unity\\assets\\uibuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\uibuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|c:\\users\\denis\\documents\\github\\proiect-unity\\assets\\scripts\\items\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\items\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\items\\speedboots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\speedboots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\items\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\assets\\scripts\\items\\strengthboost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5630F2E0-0DB6-0F52-7D52-41B831A0A002}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\items\\strengthboost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\denis\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +54,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UIbuff.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\UIbuff.cs",
+              "RelativeDocumentMoniker": "Assets\\UIbuff.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\UIbuff.cs",
+              "RelativeToolTip": "Assets\\UIbuff.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T21:32:52.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoinManager.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\CoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Items\\CoinManager.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\CoinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Items\\CoinManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:52:57.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stats.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Stats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Stats.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Stats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Stats.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:52:00.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerCombat.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\PlayerCombat.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerCombat.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\PlayerCombat.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerCombat.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAqwF0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:40:56.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:40:25.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\Coin.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Items\\Coin.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\Coin.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Items\\Coin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:39:07.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StrengthBoost.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\StrengthBoost.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Items\\StrengthBoost.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\StrengthBoost.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Items\\StrengthBoost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:31:37.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpeedBoots.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\SpeedBoots.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Items\\SpeedBoots.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\SpeedBoots.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Items\\SpeedBoots.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:31:23.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseItem.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\BaseItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Items\\BaseItem.cs",
+              "ToolTip": "C:\\Users\\denis\\Documents\\GitHub\\Proiect-Unity\\Assets\\Scripts\\Items\\BaseItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Items\\BaseItem.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:18:41.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ReadmeEditor.cs",
               "DocumentMoniker": "C:\\Users\\denis\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "RelativeDocumentMoniker": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
               "ToolTip": "C:\\Users\\denis\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "RelativeToolTip": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\Proiect-Unity\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T16:51:10.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T16:51:10.952Z"
             }
           ]
         }
