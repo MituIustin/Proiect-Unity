@@ -1,17 +1,19 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy1 : MonoBehaviour
 {
-    public float detectionRange = 10f;
-    public float attackRange = 1.5f;
-    public float moveSpeed = 2f;
-    public int AnimState = 0;
+    public float detectionRange = 75f;
+    public float attackRange = 0.75f;
+    public float moveSpeed = 3f;
+    public int health = 50;
     private Transform player;
     private Animator animator;
     private bool isAttacking = false;
     private bool facingRight = true;
+    [SerializeField] private float attackCooldown = 0.95f;
+    private float lastAttackTime = 0f;
+    public int attackDamage = 2;
 
     void Start()
     {
@@ -33,11 +35,14 @@ public class Enemy1 : MonoBehaviour
 
         if (distanceToPlayer <= attackRange)
         {
-            AttackPlayer();
+            if (Time.time >= lastAttackTime + attackCooldown)
+            {
+                AttackPlayer();
+                lastAttackTime = Time.time;
+            }
         }
         else if (distanceToPlayer <= detectionRange)
         {
-            isAttacking = false;
             ChasePlayer();
         }
         else
@@ -51,12 +56,7 @@ public class Enemy1 : MonoBehaviour
         if (isAttacking) return;
 
         animator.SetInteger("AnimState", 2);
-
-        Vector3 direction = (player.position - transform.position).normalized;
-        direction.y = 0;
-
-        FlipTowardsPlayer(); 
-
+        FlipTowardsPlayer();
         transform.position = Vector3.MoveTowards(transform.position,
                                                  new Vector3(player.position.x, transform.position.y, player.position.z),
                                                  moveSpeed * Time.deltaTime);
@@ -64,11 +64,55 @@ public class Enemy1 : MonoBehaviour
 
     void AttackPlayer()
     {
-        if (!isAttacking)
+        isAttacking = true;
+        animator.SetTrigger("Attack");
+        StartCoroutine(WaitAttack());
+        StartCoroutine(DealDamage());
+        StartCoroutine(ResetAttack());
+    }
+
+    IEnumerator WaitAttack()
+    {
+        yield return new WaitForSeconds(0.5f);
+    }
+
+    IEnumerator DealDamage()
+    {
+        yield return new WaitForSeconds(0f);
+        if (player != null)
         {
-            isAttacking = true;
-            animator.SetTrigger("Attack");
+            PlayerCombat playerCombat = player.GetComponent<PlayerCombat>();
+            if (playerCombat != null)
+            {
+                float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+                if (distanceToPlayer <= attackRange)
+                {
+                    playerCombat.TakeDamage(attackDamage);
+                }
+            }
         }
+    }
+
+    IEnumerator ResetAttack()
+    {
+        yield return new WaitForSeconds(attackCooldown);
+        isAttacking = false;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        Debug.Log(health);
+        health -= amount;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy has died.");
+        Destroy(gameObject);
     }
 
     void Idle()
@@ -86,13 +130,8 @@ public class Enemy1 : MonoBehaviour
         {
             facingRight = !facingRight;
             Vector3 localScale = transform.localScale;
-            localScale.x *= -1; 
+            localScale.x *= -1;
             transform.localScale = localScale;
         }
-    }
-
-    public void OnAttackAnimationEnd()
-    {
-        isAttacking = false;
     }
 }
