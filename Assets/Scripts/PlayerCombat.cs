@@ -12,6 +12,8 @@ public class PlayerCombat : MonoBehaviour
     int health = 60;
     int damage = 15;
 
+    int coins = 0;
+
     bool canHit = true;
 
     private void OnCollisionEnter(Collision collision)
@@ -74,7 +76,11 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
-    public IEnumerator SetDamage()
+    public void PickUpDamageBoost()
+    {
+        StartCoroutine(SetDamage());
+    }
+    private IEnumerator SetDamage()
     {
         damage = 25;
         yield return new WaitForSeconds(15f);
@@ -82,4 +88,13 @@ public class PlayerCombat : MonoBehaviour
     }
 
     public void SetCanHit(bool newCanHit) { canHit = newCanHit; }
+
+    public void PickUpCoin()
+    {
+        coins++;
+    }
+    public int GetCoins()
+    {
+        return coins;
+    }
 }

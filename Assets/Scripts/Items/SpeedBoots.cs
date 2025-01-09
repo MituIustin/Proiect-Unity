@@ -5,7 +5,8 @@ public class SpeedBoots : BaseItem
     public override void PickUp()
     {
         var player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        StartCoroutine(player.SetSpeed());
+        player.PickUpSpeedBoost();
+        SetUI();
         Destroy(gameObject);
     }
 }

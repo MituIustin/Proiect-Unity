@@ -93,13 +93,17 @@ public class PlayerMovement : MonoBehaviour
         playerCombat.SetCanHit(true);
     }
 
-    public IEnumerator SetSpeed()
+    public void PickUpSpeedBoost()
+    {
+        
+        StartCoroutine(SetSpeed());
+        
+    }
+    private IEnumerator SetSpeed()
     {
         movementSpeedHorizontal = 7f;
         movementSpeedVertical = 5f;
-        Debug.Log("START");
-        yield return new WaitForSeconds(15f);
-        Debug.Log("FINISH");
+        yield return new WaitForSeconds(15);
         movementSpeedHorizontal = 5f;
         movementSpeedVertical = 3f;
 
