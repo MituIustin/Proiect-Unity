@@ -13,13 +13,13 @@ public class PlayerCombat : MonoBehaviour
     int damage = 15;
 
     bool canHit = true;
+    private bool isAttacking = false;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Enemy")
+        if (isAttacking && collision.collider.CompareTag("Enemy"))
         {
-            //collision.gameObject.TakeDamage(damage);
-            Debug.Log("hit!\n");
+            collision.gameObject.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         }
     }
 
@@ -34,44 +34,53 @@ public class PlayerCombat : MonoBehaviour
         {
             if (Time.time - lastClickedTime <= doubleClickThreshold)
             {
-                if (!animator.GetBool("IsAttackingTwice"))
-                {
-                    animator.SetBool("IsAttackingTwice", true);
-                }
-                else
-                {
-                    animator.SetBool("IsAttackingTwice", false);
-                }
+                animator.SetBool("IsAttackingTwice", !animator.GetBool("IsAttackingTwice"));
             }
             else
             {
                 animator.SetBool("IsAttackingTwice", false);
             }
 
-            swordHitbox.enabled = true;
+            StartCoroutine(EnableHitboxTemporarily());
             animator.SetBool("IsAttacking", true);
+            isAttacking = true; 
             lastClickedTime = Time.time;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             animator.SetBool("IsAttacking", false);
-            swordHitbox.enabled = false;
+            isAttacking = false; 
         }
     }
-    
-    public int GetHealth() { return health; }  
+
+    IEnumerator EnableHitboxTemporarily()
+    {
+        swordHitbox.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        swordHitbox.enabled = false;
+    }
+
+    public int GetHealth() { return health; }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player has died.");
+        gameObject.SetActive(false);
+    }
 
     public void SetHealth(int health_)
     {
-        if (health <= 100 - health_)
-        {
-            health += health_;
-        }
-        else
-        {
-            health = 100;
-        }
+        health = Mathf.Min(health + health_, 100);
     }
 
     public IEnumerator SetDamage()
