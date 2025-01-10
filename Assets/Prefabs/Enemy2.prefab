@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7281778236364201038}
   - component: {fileID: 1937642395923797169}
   - component: {fileID: 3260293775134491217}
-  - component: {fileID: 5671038908973400654}
+  - component: {fileID: -7638195056474657024}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -161,7 +161,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5671038908973400654
+--- !u!114 &-7638195056474657024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,10 +170,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7410544157382700458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5731d690cd1b0e248861d6a1c065f227, type: 3}
+  m_Script: {fileID: 11500000, guid: b43fe44c5c404c543a3a822099856d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 10
   attackRange: 1.5
-  moveSpeed: 2
-  AnimState: 0
+  moveSpeed: 3
+  health: 50
+  attackCooldown: 0.95
+  attackDamage: 2
