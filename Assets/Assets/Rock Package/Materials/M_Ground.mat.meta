@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 85dc2b26bc1135343bd736d565a88161
+timeCreated: 1525592041
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118182
+  packageName: Rock package
+  packageVersion: 1.0
+  assetPath: Assets/Rock Package/Materials/M_Ground.mat
+  uploadId: 244257

@@ -68,16 +68,24 @@
     <Compile Include="Assets/Scripts/Enemy Scripts/Enemy2.cs" />
     <Compile Include="Assets/Scripts/Options.cs" />
     <Compile Include="Assets/Assets/Characters/Enemy/Bandits - Pixel Art/Demo/Sensor_Bandit.cs" />
+    <Compile Include="Assets/Scripts/Items/HealhPotion.cs" />
+    <Compile Include="Assets/Scripts/Items/UIbuff.cs" />
     <Compile Include="Assets/Scripts/BaseCharacter.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/PlayerController_ForNow.cs" />
     <Compile Include="Assets/Scripts/VolumeSlider.cs" />
     <Compile Include="Assets/Scripts/NPC.cs" />
+    <Compile Include="Assets/Scripts/Items/SpeedBoots.cs" />
+    <Compile Include="Assets/Scripts/Items/BaseItem.cs" />
     <Compile Include="Assets/Scripts/Stats.cs" />
     <Compile Include="Assets/Scripts/Enemy Scripts/Enemy1.cs" />
     <Compile Include="Assets/Scripts/IntroLevel.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/PlayerController(ForNow).cs" />
+    <Compile Include="Assets/Scripts/Items/StrengthBoost.cs" />
+    <Compile Include="Assets/Scripts/Items/Coin.cs" />
+    <Compile Include="Assets/Scripts/LanternManager.CS" />
+    <Compile Include="Assets/Scripts/Items/CoinManager.cs" />
     <Compile Include="Assets/Scripts/Menu.cs" />
     <Compile Include="Assets/Assets/Characters/Enemy/Bandits - Pixel Art/Demo/Bandit.cs" />
   </ItemGroup>
