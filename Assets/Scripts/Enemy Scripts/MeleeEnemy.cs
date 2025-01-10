@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Enemy1 : MonoBehaviour
+public class MeleeEnemy : MonoBehaviour
 {
     public float detectionRange = 75f;
     public float attackRange = 0.75f;
@@ -35,9 +35,9 @@ public class Enemy1 : MonoBehaviour
 
         if (distanceToPlayer <= attackRange)
         {
-            if (Time.time >= lastAttackTime + attackCooldown)
+            if (Time.time >= lastAttackTime + attackCooldown && !isAttacking)
             {
-                AttackPlayer();
+                StartCoroutine(PerformAttack());
                 lastAttackTime = Time.time;
             }
         }
@@ -62,40 +62,28 @@ public class Enemy1 : MonoBehaviour
                                                  moveSpeed * Time.deltaTime);
     }
 
-    void AttackPlayer()
+    IEnumerator PerformAttack()
     {
         isAttacking = true;
         animator.SetTrigger("Attack");
-        StartCoroutine(WaitAttack());
-        StartCoroutine(DealDamage());
-        StartCoroutine(ResetAttack());
-    }
 
-    IEnumerator WaitAttack()
-    {
         yield return new WaitForSeconds(0.5f);
-    }
 
-    IEnumerator DealDamage()
-    {
-        yield return new WaitForSeconds(0f);
         if (player != null)
         {
-            PlayerCombat playerCombat = player.GetComponent<PlayerCombat>();
-            if (playerCombat != null)
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+            if (distanceToPlayer <= attackRange)
             {
-                float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-                if (distanceToPlayer <= attackRange)
+                PlayerCombat playerCombat = player.GetComponent<PlayerCombat>();
+                if (playerCombat != null)
                 {
                     playerCombat.TakeDamage(attackDamage);
                 }
             }
         }
-    }
 
-    IEnumerator ResetAttack()
-    {
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(attackCooldown - 0.5f); // Restul cooldown-ului
+
         isAttacking = false;
     }
 
