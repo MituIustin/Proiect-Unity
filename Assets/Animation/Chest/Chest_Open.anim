@@ -38,7 +38,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: ChestV3_Top
+    path: Chest_Top
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -64,7 +64,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: ChestV3_Top
+    path: Chest_Top
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -76,7 +76,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3170671190
+      path: 281630092
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -85,7 +85,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3170671190
+      path: 281630092
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -141,7 +141,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -171,7 +171,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -201,7 +201,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -231,7 +231,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -261,7 +261,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -291,7 +291,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -304,7 +304,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -316,7 +316,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -328,7 +328,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: ChestV3_Top
+    path: Chest_Top
     classID: 4
     script: {fileID: 0}
     flags: 0

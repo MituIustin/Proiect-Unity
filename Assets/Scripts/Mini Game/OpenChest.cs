@@ -14,6 +14,7 @@ public class OpenChest : MonoBehaviour
         if (collider.tag == "Player")
         {
             animator.SetBool("Player_Nearby", true);
+            Debug.Log("open");
         }
     }
 
@@ -22,6 +23,7 @@ public class OpenChest : MonoBehaviour
         if (collider.tag == "Player")
         {
             animator.SetBool("Player_Nearby", false);
+            Debug.Log("close");
         }
     }
 }
