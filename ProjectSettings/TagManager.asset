@@ -9,6 +9,9 @@ TagManager:
   - buffpanel
   - coinsStatus
   - Key
+  - enemySpawner
+  - door
+  - nextScene
   layers:
   - Default
   - TransparentFX

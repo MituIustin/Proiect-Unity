@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     float lastClickedTime = 0f;
     float doubleClickThreshold = 0.5f;
 
-    int health = 60;
+    int health = 100;
     int damage = 15;
 
     int coins = 0;
