@@ -66,18 +66,22 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/PlayerCombat.cs" />
     <Compile Include="Assets/Scripts/Enemy Scripts/Enemy2.cs" />
+    <Compile Include="Assets/Scripts/Dodge_Scripts/ScoreManager.cs" />
     <Compile Include="Assets/Scripts/Options.cs" />
     <Compile Include="Assets/Assets/Characters/Enemy/Bandits - Pixel Art/Demo/Sensor_Bandit.cs" />
+    <Compile Include="Assets/Scripts/PortalTeleport.cs" />
     <Compile Include="Assets/Scripts/Items/HealhPotion.cs" />
     <Compile Include="Assets/Scripts/Items/UIbuff.cs" />
     <Compile Include="Assets/Scripts/BaseCharacter.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/PlayerController_ForNow.cs" />
     <Compile Include="Assets/Scripts/VolumeSlider.cs" />
+    <Compile Include="Assets/Scripts/Dodge_Scripts/ObstacleMove.cs" />
     <Compile Include="Assets/Scripts/NPC.cs" />
     <Compile Include="Assets/Scripts/Items/SpeedBoots.cs" />
     <Compile Include="Assets/Scripts/Items/BaseItem.cs" />
     <Compile Include="Assets/Scripts/Stats.cs" />
+    <Compile Include="Assets/Scripts/Dodge_Scripts/ObstacleSpawn.cs" />
     <Compile Include="Assets/Scripts/Enemy Scripts/Enemy1.cs" />
     <Compile Include="Assets/Scripts/IntroLevel.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
