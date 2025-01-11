@@ -23,8 +23,11 @@ public class PlayerMovement : MonoBehaviour
     Vector3 direction;
     Vector3 dashDirection;
 
+    bool _hasSpeedBoost;
+
     void Start()
     {
+        _hasSpeedBoost = false;
         _UI = Instantiate(UI);
     }
     private void Awake()
@@ -95,17 +98,31 @@ public class PlayerMovement : MonoBehaviour
 
     public void PickUpSpeedBoost()
     {
-        
+        if (_hasSpeedBoost)
+        {
+            StopCoroutine(SetSpeed());
+        }
         StartCoroutine(SetSpeed());
         
     }
+
+    public bool AlreadyBoost()
+    {
+        return _hasSpeedBoost;
+    }
     private IEnumerator SetSpeed()
     {
+        _hasSpeedBoost = true;
         movementSpeedHorizontal = 7f;
         movementSpeedVertical = 5f;
         yield return new WaitForSeconds(15);
         movementSpeedHorizontal = 5f;
         movementSpeedVertical = 3f;
+        _hasSpeedBoost = false;
+    }
 
+    public void SetUI(bool active)
+    {
+        _UI.SetActive(active);
     }
 }
