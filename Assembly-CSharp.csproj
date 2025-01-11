@@ -56,11 +56,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerCombat.cs" />
+    <Compile Include="Assets\Scripts\shop\ShopUI.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\Enemy2.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\RangedEnemy.cs" />
     <Compile Include="Assets\Scripts\DoorFromLevel1\KeyScript.cs" />
     <Compile Include="Assets\Assets\Characters\Enemy\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
     <Compile Include="Assets\Scripts\DoorFromLevel1\GoToNextScene.cs" />
+    <Compile Include="Assets\Scripts\shop\Shop.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\MeleeEnemy.cs" />
     <Compile Include="Assets\Scripts\Items\HealhPotion.cs" />
     <Compile Include="Assets\Scripts\Menu\NPC.cs" />
