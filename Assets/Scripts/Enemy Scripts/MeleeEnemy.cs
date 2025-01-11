@@ -15,6 +15,14 @@ public class MeleeEnemy : MonoBehaviour
     private float lastAttackTime = 0f;
     public int attackDamage = 2;
 
+    private int _keyChance = 5;
+    private int _itemChance = 30;
+
+    public GameObject healthPotion;
+    public GameObject damagePotion;
+    public GameObject speedPotion;
+    public GameObject key;
+    public GameObject coin;
     void Start()
     {
         StartCoroutine(DelayedStart());
@@ -97,8 +105,12 @@ public class MeleeEnemy : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
+        if (!(health > 0))
+        {
+            DropItem();
+        }
         Debug.Log("Enemy has died.");
         Destroy(gameObject);
     }
@@ -120,6 +132,41 @@ public class MeleeEnemy : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1;
             transform.localScale = localScale;
+        }
+    }
+
+    void DropItem()
+    {
+        GameObject item= null;
+        var itemChance=Random.Range(0, 100);
+        if (itemChance < _itemChance) {
+            var itemToDrop = Random.Range(0, 3);
+            switch(itemToDrop){
+                case 0:
+                    item=Instantiate(healthPotion);
+                    break;
+                case 1:
+                    item=Instantiate(speedPotion);
+                    break;
+                case 2:
+                    item = Instantiate(damagePotion);
+                    break;
+            }
+        }
+        var keyChance = Random.Range(0, 100);
+        if (keyChance < _keyChance && item== null)
+        {
+            item = Instantiate(key);
+        }
+        if (item ==null) {
+            item = Instantiate(coin);
+        }
+        var positionToSpawn = transform.position;
+        positionToSpawn.y = positionToSpawn.y + 2;
+        item.transform.position = positionToSpawn;
+        if (item.name.ToLower().Contains("new game object"))
+        {
+            return;
         }
     }
 }
