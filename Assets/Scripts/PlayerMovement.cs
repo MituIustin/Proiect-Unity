@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
 
     bool _hasSpeedBoost;
 
+    bool _pauseMenu;
+    public GameObject PauseMenuPrefab;
+
     void Start()
     {
         _hasSpeedBoost = false;
@@ -36,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>(); 
         playerCombat = GetComponent<PlayerCombat>();
+        _pauseMenu = false;
     }
 
     private void FixedUpdate()
@@ -82,6 +86,13 @@ public class PlayerMovement : MonoBehaviour
             playerCombat.SetCanHit(false);
             StartCoroutine(Dash());
         }
+
+        if (Input.GetKeyDown(KeyCode.P) && !PauseMenu())
+        {
+            Instantiate(PauseMenuPrefab);
+            SetUI(false);
+            SetPauseMenu(true);
+        }
     }
 
     private IEnumerator Dash()
@@ -124,5 +135,14 @@ public class PlayerMovement : MonoBehaviour
     public void SetUI(bool active)
     {
         _UI.SetActive(active);
+    }
+
+    public bool PauseMenu()
+    {
+        return _pauseMenu;
+    }
+    public void SetPauseMenu(bool active)
+    {
+        _pauseMenu = active;
     }
 }
