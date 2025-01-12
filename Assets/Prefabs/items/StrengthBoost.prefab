@@ -152,3 +152,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 409579263, guid: 6aa3dc518da0e4c4ab4276672c70acbd, type: 3}
   UI: {fileID: 1005352738234398316, guid: 169f4593ed3071b468aec9f754ab51e2, type: 3}
+  _tag: damageUI

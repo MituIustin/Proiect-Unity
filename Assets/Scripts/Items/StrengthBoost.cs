@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.TextCore;
 
 public class StrengthBoost : BaseItem
 {
@@ -10,8 +11,14 @@ public class StrengthBoost : BaseItem
     public override void UseEffect()
     {
         var player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
+        if (AlreadyHasThisBoost())
+        {
+            var _UI = GameObject.FindGameObjectWithTag(_tag);
+            Destroy(_UI.gameObject);
+        }
+        SetUI();
         player.PickUpDamageBoost();
-        SetUI(AlreadyHasThisBoost());
+        
     }
     public override int GetPrice()
     {

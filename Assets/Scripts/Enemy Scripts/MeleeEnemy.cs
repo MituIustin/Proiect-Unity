@@ -162,7 +162,7 @@ public class MeleeEnemy : MonoBehaviour
             item = Instantiate(coin);
         }
         var positionToSpawn = transform.position;
-        positionToSpawn.y = positionToSpawn.y + 2;
+        positionToSpawn.y = positionToSpawn.y + 0.5f;
         item.transform.position = positionToSpawn;
         if (item.name.ToLower().Contains("new game object"))
         {

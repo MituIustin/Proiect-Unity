@@ -14,11 +14,17 @@ public class PlayerCombat : MonoBehaviour
 
     int coins = 100;
 
+    int _knives = 60;
+    int _bombs = 50;
+
 
     bool _hasDamageBoost;
 
     bool canHit = true;
     private bool isAttacking = false;
+
+    public GameObject _knifePrefab;
+    public GameObject _bombPrefab;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -58,6 +64,20 @@ public class PlayerCombat : MonoBehaviour
         {
             animator.SetBool("IsAttacking", false);
             isAttacking = false; 
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (_knives > 0)
+            {
+                SpawnKnife();
+                _knives--;
+            }  
+        }
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            if (_bombs > 0)
+            {
+                DeployBomb();
+            }
         }
     }
 
@@ -126,5 +146,63 @@ public class PlayerCombat : MonoBehaviour
     public bool AlreadyBoost()
     {
         return _hasDamageBoost;
+    }
+
+    public void BuyKnife()
+    {
+        _knives++;
+    }
+    public void BuyBomb()
+    {
+        _bombs++;
+    }
+    public int GetKnives()
+    {
+        return _knives;
+    }
+    public int GetBombs()
+    {
+        return _bombs;
+    }
+
+    void DeployBomb()
+    {
+        var bomb= Instantiate(_bombPrefab);
+        var pos= transform.position;
+        bomb.transform.position = new Vector3(pos.x + 1, pos.y + 2, pos.z);
+        bomb.GetComponent<Bomb>().UseBomb();
+        _bombs--;
+    }
+    void SpawnKnife()
+    {
+        if (_knifePrefab != null)
+        {
+            Vector3 firePoint;
+            var facingRight = transform.localScale.x > 0;
+            if (facingRight)
+            {
+                firePoint = transform.position + new Vector3(1.2f, 0f, 0f);
+            }
+            else
+            {
+                firePoint = transform.position + new Vector3(-1.2f, 0f, 0f);
+            }
+
+            GameObject knife = Instantiate(_knifePrefab, firePoint, Quaternion.identity);
+
+            knife.transform.localScale = new Vector3(1.4f, 1.4f, 1.4f);
+
+            FlyingKnife arrowScript = knife.GetComponent<FlyingKnife>();
+            if (arrowScript != null)
+            {
+                float direction = facingRight ? 1f : -1f;
+                Rigidbody arrowRb = knife.GetComponent<Rigidbody>();
+                if (arrowRb != null)
+                {
+                    arrowRb.linearVelocity = new Vector3(direction * 20, 2f, 0f);
+                }
+                knife.transform.rotation = Quaternion.Euler(0, facingRight ?180 : 0, -45);
+            }
+        }
     }
 }
