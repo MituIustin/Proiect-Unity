@@ -107,13 +107,13 @@ public class MeleeEnemy : MonoBehaviour
 
         if (spriteRenderer != null)
         {
-            spriteRenderer.color = Color.red; 
+            spriteRenderer.color = Color.red;
         }
 
         if (rb != null)
         {
-            Vector3 knockbackDirection = (transform.position - player.position).normalized; 
-            rb.AddForce(knockbackDirection * 5f, ForceMode.Impulse); 
+            Vector3 knockbackDirection = (transform.position - player.position).normalized;
+            rb.AddForce(knockbackDirection * 5f, ForceMode.Impulse);
         }
 
         if (health <= 0)

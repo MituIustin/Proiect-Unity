@@ -54,7 +54,7 @@ public class Bomb : BaseItem
         {
             if (hit.CompareTag("Enemy"))
             {
-                hit.GetComponent<MeleeEnemy>().TakeDamage(100);
+                hit.gameObject.SendMessage("TakeDamage", 100, SendMessageOptions.DontRequireReceiver);
             }
         }
 
