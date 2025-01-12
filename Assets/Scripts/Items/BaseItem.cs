@@ -8,6 +8,7 @@ public abstract class BaseItem : MonoBehaviour
     public Sprite sprite;
     public GameObject UI;
     GameObject _UI;
+    public string _tag;
     void Start()
     {
         
@@ -18,19 +19,20 @@ public abstract class BaseItem : MonoBehaviour
         
     }
 
-    public void SetUI(bool already)
+    public void SetUI()
     {
-        if (already)
-        {
-            Destroy(_UI.gameObject);
-        }
         _UI = Instantiate(UI);
+        _UI.tag = _tag;
         _UI.GetComponent<UnityEngine.UI.Image>().sprite = sprite;
         _UI.transform.parent=GameObject.FindGameObjectWithTag("buffpanel").transform;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
+        }
         if (collision.collider.tag == "Player")
             PickUp();
     }

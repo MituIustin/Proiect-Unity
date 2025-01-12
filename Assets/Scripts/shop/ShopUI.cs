@@ -17,21 +17,31 @@ public class ShopUI : MonoBehaviour
     public List<BaseItem> _items;
 
     Button _buyButton;
-    TextMeshProUGUI _priceText; 
+    TextMeshProUGUI _priceText;
+    TextMeshProUGUI _numberOfKnives;
+    TextMeshProUGUI _numberOfBombs;
+    PlayerCombat _playerCombat;
+
 
     void Start()
     {
         _playerMoney = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>().GetCoins();
+        _playerCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
         _price = 0;
         _buyButton = GameObject.FindGameObjectWithTag("buyButton").GetComponent<Button>();
         _priceText = GameObject.FindGameObjectWithTag("cost").GetComponent<TextMeshProUGUI>();
         _buyButton.interactable = false;
+        _numberOfKnives = GameObject.FindGameObjectWithTag("numberOfKnives").GetComponent<TextMeshProUGUI>();
+        _numberOfBombs = GameObject.FindGameObjectWithTag("numberOfBombs").GetComponent<TextMeshProUGUI>();
+
     }
 
-    
+
     void Update()
     {
         _priceText.text = _price.ToString();
+        _numberOfKnives.text = _playerCombat.GetKnives().ToString();
+        _numberOfBombs.text = _playerCombat.GetBombs().ToString();
 
     }
 

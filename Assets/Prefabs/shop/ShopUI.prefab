@@ -394,6 +394,7 @@ MonoBehaviour:
   - {fileID: 1598474000201417287, guid: 373b78a312fbebf4a834fd97d887dc42, type: 3}
   - {fileID: 2812702901437413045, guid: fbe3dcf780de1f84985ea2795cbf9163, type: 3}
   - {fileID: 4945835160121207776, guid: 03e39bc3c458ab142b037ce6623bdcfb, type: 3}
+  - {fileID: -279709143971658828, guid: 1a339494977ebcf4ba00d813aaf8df76, type: 3}
 --- !u!1 &1578805310340990135
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,8 +806,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 2103726905, guid: f279e68f36dfe154c973c2a2a4638f10, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -858,7 +859,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2647123220347180728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2764654870287144671}
+        m_TargetAssemblyTypeName: ShopUI, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3367993881719261550
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3 coins
+  m_text: 2 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166ac3751375a2a4987975e04fca8f6b, type: 2}
   m_sharedMaterial: {fileID: 83360040584971043, guid: 166ac3751375a2a4987975e04fca8f6b, type: 2}
