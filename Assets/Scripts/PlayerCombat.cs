@@ -107,7 +107,9 @@ public class PlayerCombat : MonoBehaviour
 
     void Die()
     {
-        gameObject.SetActive(false);
+        animator.SetBool("IsDead", true);
+        //script de oprire movement;
+        //gameObject.SetActive(false);
     }
 
     public void SetHealth(int health_)

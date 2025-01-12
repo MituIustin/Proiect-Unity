@@ -44,7 +44,7 @@ public class SpikeScript : MonoBehaviour
                 animator.SetBool("spikesOut", false);
                 yield return new WaitForSeconds(animationDuration);
                 boxCollider.enabled = false;
-                yield return new WaitForSeconds(stayOutTime);
+                yield return new WaitForSeconds(stayOffTime);
                 spikesOut = false;
             }
         }
@@ -54,8 +54,15 @@ public class SpikeScript : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            StartCoroutine(PlayerDie(collider));
         }
+    }
+
+    IEnumerator PlayerDie(Collider2D collider)
+    {
+        collider.GetComponent<MiniGamePlayerMovement>().isDead = true;
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
