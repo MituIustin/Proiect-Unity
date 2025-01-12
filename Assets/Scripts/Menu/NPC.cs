@@ -20,7 +20,9 @@ public class NPC : MonoBehaviour
 
     public bool playerInRange;
 
-    public Text interactText; 
+    public Text interactText;
+
+    public AudioSource typingSound; 
 
     public static event Action OnDialogEnded;
 
@@ -29,29 +31,27 @@ public class NPC : MonoBehaviour
         dialogueBox.SetActive(false);
         isDialogueActive = false;
 
-     
         if (interactText != null)
         {
             interactText.gameObject.SetActive(false);
         }
     }
 
-   
     void Update()
     {
-        if (playerInRange && !isDialogueActive) 
+        if (playerInRange && !isDialogueActive)
         {
             if (interactText != null && !interactText.gameObject.activeSelf)
             {
-                interactText.gameObject.SetActive(true); 
-                interactText.text = "Press E to interact"; 
+                interactText.gameObject.SetActive(true);
+                interactText.text = "Press E to interact";
             }
         }
-        else if (!playerInRange || isDialogueActive) 
+        else if (!playerInRange || isDialogueActive)
         {
             if (interactText != null && interactText.gameObject.activeSelf)
             {
-                interactText.gameObject.SetActive(false); 
+                interactText.gameObject.SetActive(false);
             }
         }
 
@@ -59,7 +59,6 @@ public class NPC : MonoBehaviour
         {
             if (dialogueBox.activeInHierarchy)
             {
-           
                 if (dialogueText.text == dialogue[index])
                 {
                     NextLine();
@@ -87,7 +86,20 @@ public class NPC : MonoBehaviour
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
+
+            
+            if (typingSound != null && !typingSound.isPlaying)
+            {
+                typingSound.Play();
+            }
+
             yield return new WaitForSeconds(wordspeed);
+        }
+
+        
+        if (typingSound != null && typingSound.isPlaying)
+        {
+            typingSound.Stop();
         }
     }
 
@@ -107,7 +119,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) 
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -115,7 +127,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other) 
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
