@@ -22,6 +22,7 @@ TagManager:
   - numberOfBombs
   - damageUI
   - speedUI
+  - Ground
   layers:
   - Default
   - TransparentFX
