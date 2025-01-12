@@ -10,6 +10,13 @@ TagManager:
   - coinsStatus
   - Key
   - Wall
+  - enemySpawner
+  - door
+  - nextScene
+  - ShopUI
+  - Shop
+  - buyButton
+  - cost
   layers:
   - Default
   - TransparentFX

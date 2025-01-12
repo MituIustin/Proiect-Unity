@@ -9,10 +9,13 @@ public class PlayerCombat : MonoBehaviour
     float lastClickedTime = 0f;
     float doubleClickThreshold = 0.5f;
 
-    int health = 60;
+    int health = 100;
     int damage = 15;
 
-    int coins = 0;
+    int coins = 100;
+
+
+    bool _hasDamageBoost;
 
     bool canHit = true;
     private bool isAttacking = false;
@@ -28,6 +31,8 @@ public class PlayerCombat : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        _hasDamageBoost = false;
+        
     }
 
     void Update()
@@ -87,13 +92,19 @@ public class PlayerCombat : MonoBehaviour
 
     public void PickUpDamageBoost()
     {
+        if (_hasDamageBoost)
+        {
+            StopCoroutine(SetDamage());
+        }
         StartCoroutine(SetDamage());
     }
     private IEnumerator SetDamage()
     {
+        _hasDamageBoost = true;
         damage = 25;
         yield return new WaitForSeconds(15f);
         damage = 15;
+        _hasDamageBoost = false;
     }
 
     public void SetCanHit(bool newCanHit) { canHit = newCanHit; }
@@ -105,5 +116,15 @@ public class PlayerCombat : MonoBehaviour
     public int GetCoins()
     {
         return coins;
+    }
+
+    public void SpendCoins(int price)
+    {
+        coins = coins - price;
+    }
+
+    public bool AlreadyBoost()
+    {
+        return _hasDamageBoost;
     }
 }

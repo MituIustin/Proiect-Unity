@@ -1,0 +1,1833 @@
+fileFormatVersion: 2
+guid: b89d589f28014014cbfe48af46ba88de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4254019441913832834
+    second: Hood_0
+  - first:
+      213: -577388042402699480
+    second: Hood_1
+  - first:
+      213: 646351231199734535
+    second: Hood_2
+  - first:
+      213: 5462898232084310380
+    second: Hood_3
+  - first:
+      213: 6478306027181986624
+    second: Hood_4
+  - first:
+      213: -1229854612406558035
+    second: Hood_5
+  - first:
+      213: 2416780126532086594
+    second: Hood_6
+  - first:
+      213: 1451064251330601532
+    second: Hood_7
+  - first:
+      213: -4641935957902832745
+    second: Hood_8
+  - first:
+      213: 5197705014318892312
+    second: Hood_9
+  - first:
+      213: 4694345550021150637
+    second: Hood_10
+  - first:
+      213: -1201892433043486449
+    second: Hood_11
+  - first:
+      213: -3996928771330492772
+    second: Hood_12
+  - first:
+      213: -8359042576074381055
+    second: Hood_13
+  - first:
+      213: 6340322778797715628
+    second: Hood_14
+  - first:
+      213: 3505416021036469212
+    second: Hood_15
+  - first:
+      213: 6195048564611033587
+    second: Hood_16
+  - first:
+      213: -9098607991377118224
+    second: Hood_17
+  - first:
+      213: 730849228690429187
+    second: Hood_18
+  - first:
+      213: 9025491837808676327
+    second: Hood_19
+  - first:
+      213: -2436498853670102999
+    second: Hood_20
+  - first:
+      213: 8058356950305722040
+    second: Hood_21
+  - first:
+      213: 4223715784902902563
+    second: Hood_22
+  - first:
+      213: -1680794824843892135
+    second: Hood_23
+  - first:
+      213: -2420421901335964399
+    second: Hood_24
+  - first:
+      213: -8915006198700757929
+    second: Hood_25
+  - first:
+      213: -973457748150758678
+    second: Hood_26
+  - first:
+      213: 2833183393889370727
+    second: Hood_27
+  - first:
+      213: 5736401735982112812
+    second: Hood_28
+  - first:
+      213: -4503398538545233811
+    second: Hood_29
+  - first:
+      213: 2341646171366446638
+    second: Hood_30
+  - first:
+      213: 5362365984318295213
+    second: Hood_31
+  - first:
+      213: 255005486231120416
+    second: Hood_32
+  - first:
+      213: 3134615606316461138
+    second: Hood_33
+  - first:
+      213: 2907258013107325665
+    second: Hood_34
+  - first:
+      213: -3646240266537529866
+    second: Hood_35
+  - first:
+      213: 5861451353165148736
+    second: Hood_36
+  - first:
+      213: -6255328421854578556
+    second: Hood_37
+  - first:
+      213: 4719634837197401998
+    second: Hood_38
+  - first:
+      213: -8158111122101257507
+    second: Hood_39
+  - first:
+      213: -8292630043694135704
+    second: Hood_40
+  - first:
+      213: -6977059753442892322
+    second: Hood_41
+  - first:
+      213: 3461355422504062442
+    second: Hood_42
+  - first:
+      213: 6313817648996648292
+    second: Hood_43
+  - first:
+      213: 6200059927360295937
+    second: Hood_44
+  - first:
+      213: 3229208507929966027
+    second: Hood_45
+  - first:
+      213: -5570158248872446719
+    second: Hood_46
+  - first:
+      213: 7301505648475619044
+    second: Hood_47
+  - first:
+      213: -3144553296810480843
+    second: Hood_48
+  - first:
+      213: 3795474763952967523
+    second: Hood_49
+  - first:
+      213: 3764630027650662822
+    second: Hood_50
+  - first:
+      213: 8072301442362894037
+    second: Hood_51
+  - first:
+      213: -8088599205666155123
+    second: Hood_52
+  - first:
+      213: -3979481506754654615
+    second: Hood_53
+  - first:
+      213: -5761830625494310258
+    second: Hood_54
+  - first:
+      213: -2900133582021015771
+    second: Hood_55
+  - first:
+      213: -3419227526887799758
+    second: Hood_56
+  - first:
+      213: -1574412592251167302
+    second: Hood_57
+  - first:
+      213: -1691071321532632719
+    second: Hood_58
+  - first:
+      213: -7619980532982573495
+    second: Hood_59
+  - first:
+      213: -4025955589259470714
+    second: Hood_60
+  - first:
+      213: -8516472790400884875
+    second: Hood_61
+  - first:
+      213: -8127812223463402393
+    second: Hood_62
+  - first:
+      213: -4859296243551899757
+    second: Hood_63
+  - first:
+      213: 4698898246520704771
+    second: Hood_64
+  - first:
+      213: 8315136728321650463
+    second: Hood_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hood_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2352
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ade193bdfa6f4c0800000000000000
+      internalID: -4254019441913832834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2352
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827670372a4bcf7f0800000000000000
+      internalID: -577388042402699480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2352
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bebcf250d48f800800000000000000
+      internalID: 646351231199734535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2352
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69ae779ffc10db40800000000000000
+      internalID: 5462898232084310380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0435478120197e950800000000000000
+      internalID: 6478306027181986624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2a12efebdaeeee0800000000000000
+      internalID: -1229854612406558035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b2b2e68b02a8120800000000000000
+      internalID: 2416780126532086594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_7
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3224de9f37332410800000000000000
+      internalID: 1451064251330601532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bc61f17d7849fb0800000000000000
+      internalID: -4641935957902832745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8158eb10c25f12840800000000000000
+      internalID: 5197705014318892312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_10
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da742f1f76aa52140800000000000000
+      internalID: 4694345550021150637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_11
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0986363335025fe0800000000000000
+      internalID: -1201892433043486449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_12
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96be48857e0888c0800000000000000
+      internalID: -3996928771330492772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_13
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 2064
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10968bea017befb80800000000000000
+      internalID: -8359042576074381055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca03e8f89f95df750800000000000000
+      internalID: 6340322778797715628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb87d37c4db5a030800000000000000
+      internalID: 3505416021036469212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f92fe3c8db39f550800000000000000
+      internalID: 6195048564611033587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_17
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbbf630d304bb180800000000000000
+      internalID: -9098607991377118224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3051674508f742a00800000000000000
+      internalID: 730849228690429187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_19
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed06c3e10df04d70800000000000000
+      internalID: 9025491837808676327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_20
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928d853a331df2ed0800000000000000
+      internalID: -2436498853670102999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_21
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bec54883f805df60800000000000000
+      internalID: 8058356950305722040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_22
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323095fc027ad9a30800000000000000
+      internalID: 4223715784902902563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_23
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 1776
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a6dd4130e9ca8e0800000000000000
+      internalID: -1680794824843892135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1488
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1155b4cca1fe86ed0800000000000000
+      internalID: -2420421901335964399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_25
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1488
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c29049819874480800000000000000
+      internalID: -8915006198700757929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_26
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1488
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae25f9de5559d72f0800000000000000
+      internalID: -973457748150758678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea8ba572c7a85820800000000000000
+      internalID: 2907258013107325665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_35
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1200
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd0e43dbc3f56dc0800000000000000
+      internalID: -3646240266537529866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_36
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1200
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04234ad43fe085150800000000000000
+      internalID: 5861451353165148736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_37
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1200
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488f3f541fb9039a0800000000000000
+      internalID: -6255328421854578556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fa5b4f0e28f7140800000000000000
+      internalID: 4719634837197401998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddabdf0782198ce80800000000000000
+      internalID: -8158111122101257507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_40
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86601e759e8aaec80800000000000000
+      internalID: -8292630043694135704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_41
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5ac5bce118c2f90800000000000000
+      internalID: -6977059753442892322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_42
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed0abfea64390030800000000000000
+      internalID: 3461355422504062442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_43
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465890123bf2f9750800000000000000
+      internalID: 6313817648996648292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_44
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104d17497a90b0650800000000000000
+      internalID: 6200059927360295937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_45
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5b5d4670470dc20800000000000000
+      internalID: 3229208507929966027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_46
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105fe39a592d2b2b0800000000000000
+      internalID: -5570158248872446719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_47
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 912
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eeb5e6c3b8245560800000000000000
+      internalID: 7301505648475619044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53be356ef6d4c54d0800000000000000
+      internalID: -3144553296810480843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f4063403c3ca430800000000000000
+      internalID: 3795474763952967523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_50
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a103e47017ae3430800000000000000
+      internalID: 3764630027650662822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_51
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6e9e79463960070800000000000000
+      internalID: 8072301442362894037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_52
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8513cfa0e58fbf80800000000000000
+      internalID: -8088599205666155123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_53
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e07af57aa06c8c0800000000000000
+      internalID: -3979481506754654615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_54
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82e177d29dd900b0800000000000000
+      internalID: -5761830625494310258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_55
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527c47a6fd7a0c7d0800000000000000
+      internalID: -2900133582021015771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_56
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2348d9d1ea67c80d0800000000000000
+      internalID: -3419227526887799758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_57
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 624
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd97f4c610962ae0800000000000000
+      internalID: -1574412592251167302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171723eb79b1888e0800000000000000
+      internalID: -1691071321532632719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9469e20e314604690800000000000000
+      internalID: -7619980532982573495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_60
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 336
+        width: 288
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688d0b4d8bee028c0800000000000000
+      internalID: -4025955589259470714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_27
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 336
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623c411064cf87344a3fac5418f06107
+      internalID: 2833183393889370727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_28
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 336
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a71d89aeb1dca443af47a9dde00ba99
+      internalID: 5736401735982112812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_29
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 336
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346c4b614a831ee4ab0ac04067842c4d
+      internalID: -4503398538545233811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_30
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 336
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc241ad0614d5dd4f9b9c37dee481540
+      internalID: 2341646171366446638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_31
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 336
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca42aa0e3947dbb40a006e0236648284
+      internalID: 5362365984318295213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_32
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 336
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d2887d7bb7f1745b8e4c0bc50e82ef
+      internalID: 255005486231120416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_33
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 192
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0053715af37f3ca4593f4ce252b74aec
+      internalID: 3134615606316461138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_61
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 192
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d873a8329fe399d42a039864860844c8
+      internalID: -8516472790400884875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_62
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 192
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23450124846981488be669ed6ac9a75
+      internalID: -8127812223463402393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_63
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 192
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e2b7fe2fa6d9b4cb0c9898263e3b54
+      internalID: -4859296243551899757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_64
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 192
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4475870ef2feeb94db43f092b91127cb
+      internalID: 4698898246520704771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hood_65
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 192
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d5b6e68d78568459dcea7a3c6ca51a
+      internalID: 8315136728321650463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hood_0: -4254019441913832834
+      Hood_1: -577388042402699480
+      Hood_10: 4694345550021150637
+      Hood_11: -1201892433043486449
+      Hood_12: -3996928771330492772
+      Hood_13: -8359042576074381055
+      Hood_14: 6340322778797715628
+      Hood_15: 3505416021036469212
+      Hood_16: 6195048564611033587
+      Hood_17: -9098607991377118224
+      Hood_18: 730849228690429187
+      Hood_19: 9025491837808676327
+      Hood_2: 646351231199734535
+      Hood_20: -2436498853670102999
+      Hood_21: 8058356950305722040
+      Hood_22: 4223715784902902563
+      Hood_23: -1680794824843892135
+      Hood_24: -2420421901335964399
+      Hood_25: -8915006198700757929
+      Hood_26: -973457748150758678
+      Hood_27: 2833183393889370727
+      Hood_28: 5736401735982112812
+      Hood_29: -4503398538545233811
+      Hood_3: 5462898232084310380
+      Hood_30: 2341646171366446638
+      Hood_31: 5362365984318295213
+      Hood_32: 255005486231120416
+      Hood_33: 3134615606316461138
+      Hood_34: 2907258013107325665
+      Hood_35: -3646240266537529866
+      Hood_36: 5861451353165148736
+      Hood_37: -6255328421854578556
+      Hood_38: 4719634837197401998
+      Hood_39: -8158111122101257507
+      Hood_4: 6478306027181986624
+      Hood_40: -8292630043694135704
+      Hood_41: -6977059753442892322
+      Hood_42: 3461355422504062442
+      Hood_43: 6313817648996648292
+      Hood_44: 6200059927360295937
+      Hood_45: 3229208507929966027
+      Hood_46: -5570158248872446719
+      Hood_47: 7301505648475619044
+      Hood_48: -3144553296810480843
+      Hood_49: 3795474763952967523
+      Hood_5: -1229854612406558035
+      Hood_50: 3764630027650662822
+      Hood_51: 8072301442362894037
+      Hood_52: -8088599205666155123
+      Hood_53: -3979481506754654615
+      Hood_54: -5761830625494310258
+      Hood_55: -2900133582021015771
+      Hood_56: -3419227526887799758
+      Hood_57: -1574412592251167302
+      Hood_58: -1691071321532632719
+      Hood_59: -7619980532982573495
+      Hood_6: 2416780126532086594
+      Hood_60: -4025955589259470714
+      Hood_61: -8516472790400884875
+      Hood_62: -8127812223463402393
+      Hood_63: -4859296243551899757
+      Hood_64: 4698898246520704771
+      Hood_65: 8315136728321650463
+      Hood_66: 854635399
+      Hood_67: 1954300619
+      Hood_68: 1446165923
+      Hood_69: -1980332028
+      Hood_7: 1451064251330601532
+      Hood_70: 1630624014
+      Hood_71: -603879540
+      Hood_72: -688069717
+      Hood_73: -1958270706
+      Hood_74: -1036184373
+      Hood_8: -4641935957902832745
+      Hood_9: 5197705014318892312
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296953
+  packageName: Cute Chibi Character Free Pack (Unique Skill Animated Prefab with
+    SFX)
+  packageVersion: 1.0
+  assetPath: Assets/Chibi Character Free (Unique Skill Animated Prefab with SFX)/Characters/Hood/Hood.png
+  uploadId: 695069

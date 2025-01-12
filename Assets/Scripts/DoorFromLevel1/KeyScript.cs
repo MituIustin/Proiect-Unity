@@ -3,13 +3,18 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-    public GameObject door;
+    GameObject door;
     public GameObject key;
 
     float timeToDoor = 2f;
     float xOffset = 0.3f;
     float yOffset = 1f;
 
+    void Start()
+    {
+        GameObject.FindGameObjectWithTag("enemySpawner").GetComponent<EnemySpawner>().SetSpawn();
+        door = GameObject.FindGameObjectWithTag("door");
+    }
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -41,6 +46,8 @@ public class KeyScript : MonoBehaviour
         }
 
         key.transform.position = targetPosition;
+
+        GameObject.FindGameObjectWithTag("nextScene").GetComponent<GoToNextScene>().GotTheKey();
 
         Destroy(key);
     }

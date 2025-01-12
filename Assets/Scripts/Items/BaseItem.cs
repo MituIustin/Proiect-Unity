@@ -18,8 +18,12 @@ public abstract class BaseItem : MonoBehaviour
         
     }
 
-    public void SetUI()
+    public void SetUI(bool already)
     {
+        if (already)
+        {
+            Destroy(_UI.gameObject);
+        }
         _UI = Instantiate(UI);
         _UI.GetComponent<UnityEngine.UI.Image>().sprite = sprite;
         _UI.transform.parent=GameObject.FindGameObjectWithTag("buffpanel").transform;
@@ -31,5 +35,10 @@ public abstract class BaseItem : MonoBehaviour
             PickUp();
     }
 
+    public abstract void UseEffect();
     public abstract void PickUp();
+
+    public abstract int GetPrice();
+
+    public abstract bool AlreadyHasThisBoost();
 }
