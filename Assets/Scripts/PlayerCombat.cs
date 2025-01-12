@@ -17,7 +17,6 @@ public class PlayerCombat : MonoBehaviour
     int _knives = 60;
     int _bombs = 50;
 
-
     bool _hasDamageBoost;
 
     bool canHit = true;
@@ -25,6 +24,8 @@ public class PlayerCombat : MonoBehaviour
 
     public GameObject _knifePrefab;
     public GameObject _bombPrefab;
+
+    public AudioSource attackSound;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -38,7 +39,6 @@ public class PlayerCombat : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         _hasDamageBoost = false;
-        
     }
 
     void Update()
@@ -56,14 +56,19 @@ public class PlayerCombat : MonoBehaviour
 
             StartCoroutine(EnableHitboxTemporarily());
             animator.SetBool("IsAttacking", true);
-            isAttacking = true; 
+            isAttacking = true;
             lastClickedTime = Time.time;
+
+            if (attackSound != null)
+            {
+                attackSound.Play();
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             animator.SetBool("IsAttacking", false);
-            isAttacking = false; 
+            isAttacking = false;
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -71,9 +76,10 @@ public class PlayerCombat : MonoBehaviour
             {
                 SpawnKnife();
                 _knives--;
-            }  
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Z)) {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
             if (_bombs > 0)
             {
                 DeployBomb();
@@ -101,7 +107,6 @@ public class PlayerCombat : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player has died.");
         gameObject.SetActive(false);
     }
 
@@ -118,6 +123,7 @@ public class PlayerCombat : MonoBehaviour
         }
         StartCoroutine(SetDamage());
     }
+
     private IEnumerator SetDamage()
     {
         _hasDamageBoost = true;
@@ -133,6 +139,7 @@ public class PlayerCombat : MonoBehaviour
     {
         coins++;
     }
+
     public int GetCoins()
     {
         return coins;
@@ -152,14 +159,17 @@ public class PlayerCombat : MonoBehaviour
     {
         _knives++;
     }
+
     public void BuyBomb()
     {
         _bombs++;
     }
+
     public int GetKnives()
     {
         return _knives;
     }
+
     public int GetBombs()
     {
         return _bombs;
@@ -167,12 +177,21 @@ public class PlayerCombat : MonoBehaviour
 
     void DeployBomb()
     {
-        var bomb= Instantiate(_bombPrefab);
-        var pos= transform.position;
-        bomb.transform.position = new Vector3(pos.x + 1, pos.y + 2, pos.z);
+        var bomb = Instantiate(_bombPrefab);
+        var pos = transform.position;
+        var facingRight = transform.localScale.x > 0;
+        if (facingRight)
+        {
+            bomb.transform.position = new Vector3(pos.x + 1, pos.y + 2, pos.z);
+        }
+        else
+        {
+            bomb.transform.position = new Vector3(pos.x - 1, pos.y + 2, pos.z);
+        }
         bomb.GetComponent<Bomb>().UseBomb();
         _bombs--;
     }
+
     void SpawnKnife()
     {
         if (_knifePrefab != null)
@@ -201,7 +220,7 @@ public class PlayerCombat : MonoBehaviour
                 {
                     arrowRb.linearVelocity = new Vector3(direction * 20, 2f, 0f);
                 }
-                knife.transform.rotation = Quaternion.Euler(0, facingRight ?180 : 0, -45);
+                knife.transform.rotation = Quaternion.Euler(0, facingRight ? 180 : 0, -45);
             }
         }
     }
