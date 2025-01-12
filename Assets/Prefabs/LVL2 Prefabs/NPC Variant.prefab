@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5397934957360446455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: wordspeed
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: Oh, you made it to the cave!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'dialogue.Array.data[1]'
+      value: Yes, yes.. i can teleport but thats not important now!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'dialogue.Array.data[2]'
+      value: Let me tell you about the shop! You can collect coins and buy stuff
+        from here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'dialogue.Array.data[3]'
+      value: Health, weapons, armor, anything you want!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'dialogue.Array.data[4]'
+      value: 'I must not keep you stuck here for too long. Here, take this lantern,
+        it will guide you through the darkness. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699452545713901806, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'dialogue.Array.data[5]'
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056358044600486222, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889152100435303432, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: m_Name
+      value: NPC Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399609638330492992, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 46b1b2f0243e04614a0f2ff6fe7b9508, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7c3b976d56814cbc8439ebe17a2403d, type: 3}

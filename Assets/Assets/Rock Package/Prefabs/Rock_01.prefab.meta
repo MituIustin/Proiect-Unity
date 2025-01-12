@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 30b99e7dc1382e346a7f9789de00de5e
+timeCreated: 1525579802
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118182
+  packageName: Rock package
+  packageVersion: 1.0
+  assetPath: Assets/Rock Package/Prefabs/Rock_01.prefab
+  uploadId: 244257

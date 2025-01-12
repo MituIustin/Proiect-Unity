@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class NPC : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class NPC : MonoBehaviour
     public bool playerInRange;
 
     public Text interactText; 
+
+    public static event Action OnDialogEnded;
 
     void Start()
     {
@@ -99,6 +102,8 @@ public class NPC : MonoBehaviour
         {
             ZeroText();
             isDialogueActive = false;
+
+            OnDialogEnded?.Invoke();
         }
     }
 
