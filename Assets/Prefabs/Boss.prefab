@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5546212074388570143}
   - component: {fileID: 974044638459763251}
   - component: {fileID: 1361019981245612813}
+  - component: {fileID: 5918594539717097563}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,5 +159,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.66, y: 0.59, z: 0.29}
+  m_Size: {x: 0.66, y: 0.76, z: 0.29}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5918594539717097563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3776278535004073849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca7fd973daa906419e679026914d611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maintainRange: 5
+  moveSpeed: 5
+  health: 200
+  enemyPrefabs:
+  - {fileID: 312458102091966354, guid: bcb59af9fda5c2b44bab3a9b41406293, type: 3}
+  - {fileID: 7410544157382700458, guid: 5cf30ee0d101045479d7494bcb209ce9, type: 3}
+  - {fileID: 7410544157382700458, guid: f0a332c4def456742b5879adef3803c5, type: 3}
+  energyBallPrefab: {fileID: 1758323160197388924, guid: eb69eaff4d5b0d84e9aa98b205979736, type: 3}
+  energyBallSpeed: 10
+  attackCooldown: 2
+  attackDamage: 10
+  movementCooldown: 3

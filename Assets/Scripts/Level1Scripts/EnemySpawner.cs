@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     PlayerMovement _player;
     public GameObject _enemy1;
     public GameObject _enemy2;
+    public GameObject _enemy3;
     bool _pauseSpawning;
     int _spawned;
 
@@ -67,7 +68,7 @@ public class EnemySpawner : MonoBehaviour
             return spawnPosition;
     }
     private void SpawnEnemy() {
-        var randomChoice = Random.Range(0, 2);
+        var randomChoice = Random.Range(0, 3);
         if (randomChoice == 0)
         {
             var enemy = Instantiate(_enemy1);
@@ -75,8 +76,16 @@ public class EnemySpawner : MonoBehaviour
         }
         else
         {
-            var enemy = Instantiate(_enemy2);
-            enemy.transform.position = getLocationForSpawn();
+            if(randomChoice == 1)
+            {
+                var enemy = Instantiate(_enemy2);
+                enemy.transform.position = getLocationForSpawn();
+            }
+            else
+            {
+                var enemy = Instantiate(_enemy3);
+                enemy.transform.position = getLocationForSpawn();
+            }
         }
     }
 

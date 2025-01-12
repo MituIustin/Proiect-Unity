@@ -59,31 +59,49 @@
     <Compile Include="Assets\Scripts\shop\ShopUI.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\Enemy2.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\RangedEnemy.cs" />
+    <Compile Include="Assets\Scripts\Mini Game\ArrowTrap.cs" />
     <Compile Include="Assets\Scripts\DoorFromLevel1\KeyScript.cs" />
+    <Compile Include="Assets\Scripts\Dodge_Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Assets\Characters\Enemy\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
     <Compile Include="Assets\Scripts\DoorFromLevel1\GoToNextScene.cs" />
     <Compile Include="Assets\Scripts\shop\Shop.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\MeleeEnemy.cs" />
+    <Compile Include="Assets\Scripts\PortalTeleport.cs" />
     <Compile Include="Assets\Scripts\Items\HealhPotion.cs" />
     <Compile Include="Assets\Scripts\Menu\NPC.cs" />
     <Compile Include="Assets\Scripts\Items\UIbuff.cs" />
     <Compile Include="Assets\Scripts\BaseCharacter.cs" />
+    <Compile Include="Assets\Scripts\Mini Game\MiniGamePlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\BossScript.cs" />
     <Compile Include="Assets\Scripts\DoorFromLevel1\OpenDoorTrigger.cs" />
     <Compile Include="Assets\Scripts\DoorFromLevel1\OpenDoor.cs" />
+    <Compile Include="Assets\Scripts\Mini Game\MiniGameKey.cs" />
+    <Compile Include="Assets\Scripts\Items\Bomb.cs" />
+    <Compile Include="Assets\Scripts\Dodge_Scripts\ObstacleMove.cs" />
     <Compile Include="Assets\Scripts\Items\SpeedBoots.cs" />
     <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\ScenenManagerScript.cs" />
+    <Compile Include="Assets\Scripts\Mini Game\ArrowScript.cs" />
+    <Compile Include="Assets\Scripts\Dodge_Scripts\ObstacleSpawn.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\pauseMenu.cs" />
     <Compile Include="Assets\Scripts\IntroLevel.cs" />
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Items\StrengthBoost.cs" />
+    <Compile Include="Assets\Scripts\Level3Scripts\BossSpawn.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\Arrow.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\EnergyBall.cs" />
+    <Compile Include="Assets\Scripts\Mini Game\SpikeScript.cs" />
     <Compile Include="Assets\Scripts\Menu\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\Items\Coin.cs" />
+    <Compile Include="Assets\Scripts\LanternManager.CS" />
     <Compile Include="Assets\Scripts\Level1Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Items\CoinManager.cs" />
+    <Compile Include="Assets\Scripts\Mini Game\OpenChest.cs" />
+    <Compile Include="Assets\Scripts\Items\FlyingKnife.cs" />
+    <Compile Include="Assets\Sounds\SoundScript.cs" />
     <Compile Include="Assets\Assets\Characters\Enemy\Bandits - Pixel Art\Demo\Bandit.cs" />
     <Compile Include="Assets\Scripts\Menu\Options.cs" />
   </ItemGroup>
@@ -1185,6 +1203,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">

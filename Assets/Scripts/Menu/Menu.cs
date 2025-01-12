@@ -5,9 +5,12 @@ public class Menu : MonoBehaviour
 {
     public GameObject menuPrefab;
     GameObject menu;
+    private SceneManagerScript _sceneManager;
     void Start()
     {
         menu=Instantiate(menuPrefab);
+        var prefab = Resources.Load<GameObject>("SceneManagerObject");
+        _sceneManager = prefab.GetComponent<SceneManagerScript>();
     }
 
     // Update is called once per frame
@@ -18,7 +21,9 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Intro Level");
+        var prefab = Resources.Load<GameObject>("SceneManagerObject");
+        _sceneManager = prefab.GetComponent<SceneManagerScript>();
+        _sceneManager.GoToLevel1();
     }
 
     public void Options()

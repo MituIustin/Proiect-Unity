@@ -18,6 +18,7 @@ public class RangedEnemy : MonoBehaviour
     private float lastAttackTime = 0f;
     public float attackCooldown = 1.5f;
     public int attackDamage = 5;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -30,12 +31,13 @@ public class RangedEnemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         if (player == null) return;
-        
+
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         if (distanceToPlayer <= attackRange)
@@ -55,8 +57,8 @@ public class RangedEnemy : MonoBehaviour
             }
         }
         else if (distanceToPlayer <= detectionRange)
-        { 
-                ChasePlayer();
+        {
+            ChasePlayer();
         }
         else
         {
@@ -79,7 +81,7 @@ public class RangedEnemy : MonoBehaviour
         isAttacking = true;
         animator.SetInteger("AnimState", 2);
 
-        yield return new WaitForSeconds(0.5f); 
+        yield return new WaitForSeconds(0.5f);
 
         if (player != null)
         {
@@ -93,7 +95,7 @@ public class RangedEnemy : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown - 0.5f);
 
         isAttacking = false;
-        animator.SetInteger("AnimState", 0); 
+        animator.SetInteger("AnimState", 0);
     }
 
     void SpawnArrow()
@@ -128,16 +130,35 @@ public class RangedEnemy : MonoBehaviour
         }
     }
 
-
-
-
-
     public void TakeDamage(int amount)
     {
         health -= amount;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.red;
+        }
+
+        if (rb != null)
+        {
+            Vector3 knockbackDirection = (transform.position - player.position).normalized;
+            rb.AddForce(knockbackDirection * 5f, ForceMode.Impulse);
+        }
+
         if (health <= 0)
         {
             Die();
+        }
+
+        StartCoroutine(ResetColor());
+    }
+
+    private IEnumerator ResetColor()
+    {
+        yield return new WaitForSeconds(0.1f);
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.white;
         }
     }
 
