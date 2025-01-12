@@ -9,6 +9,7 @@ TagManager:
   - buffpanel
   - coinsStatus
   - Key
+  - Wall
   - enemySpawner
   - door
   - nextScene
