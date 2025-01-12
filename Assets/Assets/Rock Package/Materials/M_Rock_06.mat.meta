@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f5599d5d17120464db2c0674944061c4
+timeCreated: 1513838065
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 118182
+  packageName: Rock package
+  packageVersion: 1.0
+  assetPath: Assets/Rock Package/Materials/M_Rock_06.mat
+  uploadId: 244257
