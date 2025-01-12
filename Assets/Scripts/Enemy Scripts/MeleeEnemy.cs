@@ -23,6 +23,10 @@ public class MeleeEnemy : MonoBehaviour
     public GameObject speedPotion;
     public GameObject key;
     public GameObject coin;
+
+    private SpriteRenderer spriteRenderer; 
+    private Rigidbody rb;  
+
     void Start()
     {
         StartCoroutine(DelayedStart());
@@ -33,6 +37,8 @@ public class MeleeEnemy : MonoBehaviour
         yield return new WaitForSeconds(2f);
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();  
+        rb = GetComponent<Rigidbody>();  
     }
 
     void Update()
@@ -90,18 +96,40 @@ public class MeleeEnemy : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(attackCooldown - 0.5f); // Restul cooldown-ului
+        yield return new WaitForSeconds(attackCooldown - 0.5f); 
 
         isAttacking = false;
     }
 
     public void TakeDamage(int amount)
     {
-        Debug.Log(health);
         health -= amount;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.red; 
+        }
+
+        if (rb != null)
+        {
+            Vector3 knockbackDirection = (transform.position - player.position).normalized; 
+            rb.AddForce(knockbackDirection * 5f, ForceMode.Impulse); 
+        }
+
         if (health <= 0)
         {
             Die();
+        }
+
+        StartCoroutine(ResetColor());
+    }
+
+    private IEnumerator ResetColor()
+    {
+        yield return new WaitForSeconds(0.1f); 
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.white; 
         }
     }
 
@@ -137,16 +165,18 @@ public class MeleeEnemy : MonoBehaviour
 
     void DropItem()
     {
-        GameObject item= null;
-        var itemChance=Random.Range(0, 100);
-        if (itemChance < _itemChance) {
+        GameObject item = null;
+        var itemChance = Random.Range(0, 100);
+        if (itemChance < _itemChance)
+        {
             var itemToDrop = Random.Range(0, 3);
-            switch(itemToDrop){
+            switch (itemToDrop)
+            {
                 case 0:
-                    item=Instantiate(healthPotion);
+                    item = Instantiate(healthPotion);
                     break;
                 case 1:
-                    item=Instantiate(speedPotion);
+                    item = Instantiate(speedPotion);
                     break;
                 case 2:
                     item = Instantiate(damagePotion);
@@ -154,11 +184,12 @@ public class MeleeEnemy : MonoBehaviour
             }
         }
         var keyChance = Random.Range(0, 100);
-        if (keyChance < _keyChance && item== null)
+        if (keyChance < _keyChance && item == null)
         {
             item = Instantiate(key);
         }
-        if (item ==null) {
+        if (item == null)
+        {
             item = Instantiate(coin);
         }
         var positionToSpawn = transform.position;

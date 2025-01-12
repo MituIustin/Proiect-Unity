@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Items\StrengthBoost.cs" />
+    <Compile Include="Assets\Scripts\Level3Scripts\BossSpawn.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\Arrow.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\EnergyBall.cs" />
     <Compile Include="Assets\Scripts\Mini Game\SpikeScript.cs" />
