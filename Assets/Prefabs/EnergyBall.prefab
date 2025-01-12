@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5934491195685433875}
   - component: {fileID: 4907080781232696597}
   - component: {fileID: 8442663087631160562}
+  - component: {fileID: 8988245494571252138}
   m_Layer: 0
   m_Name: EnergyBall
   m_TagString: Untagged
@@ -175,3 +176,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.86, y: 0.76, z: 0.68}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8988245494571252138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758323160197388924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ed785828f9a774a91010898da9dafa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
+  damage: 15

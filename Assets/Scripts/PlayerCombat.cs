@@ -179,7 +179,15 @@ public class PlayerCombat : MonoBehaviour
     {
         var bomb = Instantiate(_bombPrefab);
         var pos = transform.position;
-        bomb.transform.position = new Vector3(pos.x + 1, pos.y + 2, pos.z);
+        var facingRight = transform.localScale.x > 0;
+        if (facingRight)
+        {
+            bomb.transform.position = new Vector3(pos.x + 1, pos.y + 2, pos.z);
+        }
+        else
+        {
+            bomb.transform.position = new Vector3(pos.x - 1, pos.y + 2, pos.z);
+        }
         bomb.GetComponent<Bomb>().UseBomb();
         _bombs--;
     }

@@ -135,7 +135,7 @@ public class BossScript : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             GameObject enemyToSpawn = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-            //Instantiate(enemyToSpawn, transform.position + spawnOffsets[i] * 2, Quaternion.identity);
+            Instantiate(enemyToSpawn, transform.position + spawnOffsets[i] * 2, Quaternion.identity);
         }
         yield return new WaitForSeconds(attackCooldown - 0.5f);
         isAttacking = false;
