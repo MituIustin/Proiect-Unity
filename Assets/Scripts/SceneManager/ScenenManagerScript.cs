@@ -36,4 +36,9 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level1CutScene");
     }
+
+    public void GoToDeathScreen()
+    {
+        SceneManager.LoadScene("DeathScreen");
+    }
 }
