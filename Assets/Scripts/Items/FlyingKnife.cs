@@ -20,7 +20,7 @@ public class FlyingKnife : BaseItem
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<MeleeEnemy>().TakeDamage(20);
+                other.gameObject.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         }
 
         Destroy(gameObject);

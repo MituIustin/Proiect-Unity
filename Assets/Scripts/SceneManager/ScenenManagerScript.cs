@@ -41,4 +41,9 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("DeathScreen");
     }
+    
+    public void GoToFinalCutScene()
+    {
+        SceneManager.LoadScene("Level3CutScene");
+    }
 }

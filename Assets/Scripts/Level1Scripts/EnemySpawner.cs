@@ -101,7 +101,14 @@ public class EnemySpawner : MonoBehaviour
         _stillSpawning = false;
         var enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var enemy in enemies) {
-            enemy.GetComponent<MeleeEnemy>().Die();
+            if (enemy.GetComponent<MeleeEnemy>() != null)
+            {
+                enemy.GetComponent<MeleeEnemy>().Die();
+            }
+            if (enemy.GetComponent<RangedEnemy>() != null)
+            {
+                enemy.GetComponent<RangedEnemy>().Die();
+            }
         }
     }
 }

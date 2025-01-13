@@ -185,3 +185,4 @@ MonoBehaviour:
   attackCooldown: 2
   attackDamage: 10
   movementCooldown: 3
+  banana: {fileID: 3355626302234992199, guid: 7b7a60980f07021488b8f2c94a96f93c, type: 3}
