@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Options.unity
-    guid: 1471ca4ae6d4320498514ac7bde72816
+    path: Assets/Scenes/Cutscene.unity
+    guid: 8534dec0e7ebe88459c428079d997dd7
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 77b2414384a24c843bed98bb43d98828
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 1471ca4ae6d4320498514ac7bde72816
+  - enabled: 1
+    path: Assets/Scenes/Level1CutScene.unity
+    guid: 4fc897b203f38e64799fcd061c23eeed
   - enabled: 1
     path: Assets/Scenes/FirstLevel.unity
     guid: f3a43c8cf4d6241689f3c08193c10dea
@@ -24,17 +30,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigame_Dodge.unity
     guid: cb453f169ed8c4cb1a79e4402c7bddae
   - enabled: 1
-    path: Assets/Scenes/Level1CutScene.unity
-    guid: 4fc897b203f38e64799fcd061c23eeed
-  - enabled: 1
-    path: Assets/Scenes/DeathScreen.unity
-    guid: 1707741c46f1b3f4aaad40768eb5e7e6
+    path: Assets/Scenes/Level 3.unity
+    guid: 901ae19f7c0ef964f9d777d611f52338
   - enabled: 1
     path: Assets/Scenes/FinalCutScene.unity
     guid: 12e5b26b374508e4aab7c28b41779c03
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-    guid: 901ae19f7c0ef964f9d777d611f52338
+    path: Assets/Scenes/DeathScreen.unity
+    guid: 1707741c46f1b3f4aaad40768eb5e7e6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
