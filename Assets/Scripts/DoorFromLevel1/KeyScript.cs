@@ -14,17 +14,17 @@ public class KeyScript : MonoBehaviour
     void Start()
     {
         GameObject.FindGameObjectWithTag("enemySpawner").GetComponent<EnemySpawner>().SetSpawn();
-        if (SceneManager.GetActiveScene().name == "FirstLevel")
-            door = GameObject.FindGameObjectWithTag("door");
-        else
-            door = GameObject.FindGameObjectWithTag("minigameDoor");
+        
     }
 
     private void OnTriggerEnter(Collider collider)
     {
+        if (SceneManager.GetActiveScene().name == "FirstLevel")
+            door = GameObject.FindGameObjectWithTag("door");
+        else
+            door = GameObject.FindGameObjectWithTag("minigameDoor");
         if (collider.tag == "Player")
         {
-            key.GetComponent<SphereCollider>().enabled = false;
             StartCoroutine(Fly());
         }
     }
@@ -47,6 +47,8 @@ public class KeyScript : MonoBehaviour
             elapsedTime += Time.deltaTime;
 
             yield return null;
+            if(key.GetComponent<SphereCollider>().enabled == true)
+                key.GetComponent<SphereCollider>().enabled = false;
         }
 
         key.transform.position = targetPosition;

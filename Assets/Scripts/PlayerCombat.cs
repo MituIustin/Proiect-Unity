@@ -12,10 +12,10 @@ public class PlayerCombat : MonoBehaviour
     int health = 100;
     int damage = 15;
 
-    int coins = 100;
+    int coins = 0;
 
-    int _knives = 60;
-    int _bombs = 50;
+    int _knives = 10;
+    int _bombs = 3;
 
     bool _hasDamageBoost;
 
