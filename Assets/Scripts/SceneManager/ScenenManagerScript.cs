@@ -36,4 +36,9 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level1CutScene");
     }
+
+    public void GoToFinalCutScene()
+    {
+        SceneManager.LoadScene("Level3CutScene");
+    }
 }
