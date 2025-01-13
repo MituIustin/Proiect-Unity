@@ -31,4 +31,9 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void GoToCutScene()
+    {
+        SceneManager.LoadScene("Level1CutScene");
+    }
 }
