@@ -1,5 +1,7 @@
 using System.Collections;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeyScript : MonoBehaviour
 {
@@ -13,7 +15,10 @@ public class KeyScript : MonoBehaviour
     void Start()
     {
         GameObject.FindGameObjectWithTag("enemySpawner").GetComponent<EnemySpawner>().SetSpawn();
-        door = GameObject.FindGameObjectWithTag("door");
+        if (SceneManager.GetActiveScene().name == "FirstLevel")
+            door = GameObject.FindGameObjectWithTag("door");
+        else
+            door = GameObject.FindGameObjectWithTag("minigameDoor");
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -46,8 +51,14 @@ public class KeyScript : MonoBehaviour
         }
 
         key.transform.position = targetPosition;
-
-        GameObject.FindGameObjectWithTag("nextScene").GetComponent<GoToNextScene>().GotTheKey();
+        if (SceneManager.GetActiveScene().name == "FirstLevel")
+            GameObject.FindGameObjectWithTag("nextScene").GetComponent<GoToNextScene>().GotTheKey();
+        else
+        {
+            var portal = Resources.Load<GameObject>("Portal");
+            var portalInstantiated=Instantiate(portal);
+            portalInstantiated.transform.position = new Vector3(44.73f, 0.06f, 11.51f);
+        }
 
         Destroy(key);
     }

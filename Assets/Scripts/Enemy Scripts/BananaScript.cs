@@ -4,9 +4,9 @@ public class BananaScript : MonoBehaviour
 {
     private SceneManagerScript _sceneManager;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collider)
     {
-        if (other.CompareTag("Player"))
+        if (collider.gameObject.tag=="Player")
         {
             var prefab = Resources.Load<GameObject>("SceneManagerObject");
             if (prefab != null)
