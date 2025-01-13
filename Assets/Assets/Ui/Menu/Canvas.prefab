@@ -913,9 +913,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -8442240226904478878, guid: a21a08ae6edba6d41bd311a8f3f57f95, type: 3}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 8927871501342738321, guid: a8af6c3d2d2c5b345b35a1e846ced69b, type: 3}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: GoToCutScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
