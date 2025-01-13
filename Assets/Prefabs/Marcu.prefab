@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3490556614266581497, guid: 0914fb937f574fd4a9aca88dddbb7b1f, type: 3}
       propertyPath: m_Name
-      value: Hood Variant
+      value: Marcu
       objectReference: {fileID: 0}
     - target: {fileID: 3490556614266581497, guid: 0914fb937f574fd4a9aca88dddbb7b1f, type: 3}
       propertyPath: m_TagString
@@ -112,7 +112,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &5902368534291121185
 BoxCollider:
@@ -155,3 +155,8 @@ MonoBehaviour:
   arrowSpeed: 7
   attackCooldown: 1.5
   attackDamage: 5
+  healthPotion: {fileID: 6275994766866532707, guid: 03e39bc3c458ab142b037ce6623bdcfb, type: 3}
+  damagePotion: {fileID: 660924389822503522, guid: 373b78a312fbebf4a834fd97d887dc42, type: 3}
+  speedPotion: {fileID: 8111049503161822997, guid: fbe3dcf780de1f84985ea2795cbf9163, type: 3}
+  key: {fileID: 2551052171216354137, guid: b3a031e61a132d54b9b08d731f031b54, type: 3}
+  coin: {fileID: 8278541573266552547, guid: 4df48e7e0243fc04fa23ee06516a3526, type: 3}

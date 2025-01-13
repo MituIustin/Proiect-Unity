@@ -6,7 +6,7 @@ public class RangedEnemy : MonoBehaviour
     public float detectionRange = 10f;
     public float attackRange = 1.5f;
     public float moveSpeed = 1.2f;
-    public int health = 50;
+    public int health = 40;
     public GameObject arrowPrefab;
     public float arrowSpeed = 7f;
 
@@ -19,6 +19,15 @@ public class RangedEnemy : MonoBehaviour
     public float attackCooldown = 1.5f;
     public int attackDamage = 5;
     private SpriteRenderer spriteRenderer;
+
+    public GameObject healthPotion;
+    public GameObject damagePotion;
+    public GameObject speedPotion;
+    public GameObject key;
+    public GameObject coin;
+    private int _keyChance = 5;
+    private int _itemChance = 30;
+    private bool isDead = false;
 
     void Start()
     {
@@ -162,11 +171,20 @@ public class RangedEnemy : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
-        animator.SetInteger("AnimState", 5);
-        Destroy(gameObject, 1f);
-        animator.SetBool("IsDead", true);
+        if(isDead == false)
+        {
+            animator.SetInteger("AnimState", 5);
+            if (!(health > 0))
+            {
+                DropItem();
+                isDead = true;
+            }
+            Destroy(gameObject, 1f);
+            animator.SetBool("IsDead", true);
+        }
+        
     }
 
     void Idle()
@@ -190,4 +208,43 @@ public class RangedEnemy : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+    void DropItem()
+    {
+        GameObject item = null;
+        var itemChance = Random.Range(0, 100);
+        if (itemChance < _itemChance)
+        {
+            var itemToDrop = Random.Range(0, 3);
+            switch (itemToDrop)
+            {
+                case 0:
+                    item = Instantiate(healthPotion);
+                    break;
+                case 1:
+                    item = Instantiate(speedPotion);
+                    break;
+                case 2:
+                    item = Instantiate(damagePotion);
+                    break;
+            }
+        }
+        var keyChance = Random.Range(0, 100);
+        if (keyChance < _keyChance && item == null)
+        {
+            item = Instantiate(key);
+        }
+        if (item == null)
+        {
+            item = Instantiate(coin);
+        }
+        var positionToSpawn = transform.position;
+        positionToSpawn.y = positionToSpawn.y + 0.5f;
+        item.transform.position = positionToSpawn;
+        if (item.name.ToLower().Contains("new game object"))
+        {
+            return;
+        }
+    }
+
 }

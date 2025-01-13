@@ -21,6 +21,8 @@ public class BossScript : MonoBehaviour
     private float lastAttackTime = 0f;
     private float lastMoveTime = 0f;
 
+    public GameObject banana;
+
     void Start()
     {
         StartCoroutine(DelayedStart());
@@ -184,7 +186,18 @@ public class BossScript : MonoBehaviour
     void Die()
     {
         animator.SetInteger("AnimState", 6);
+        DropItem();
         Destroy(gameObject, 2f);
+
+    }
+
+    void DropItem()
+    {
+        GameObject item = null;
+        item = Instantiate(banana);    
+        var positionToSpawn = transform.position;
+        positionToSpawn.y = positionToSpawn.y + 0.5f;
+        item.transform.position = positionToSpawn;
     }
 
     void FlipTowardsPlayer()
