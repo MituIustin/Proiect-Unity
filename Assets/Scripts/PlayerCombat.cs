@@ -27,6 +27,8 @@ public class PlayerCombat : MonoBehaviour
 
     public AudioSource attackSound;
 
+    bool _isDead;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (isAttacking && collision.collider.CompareTag("Enemy"))
@@ -37,54 +39,59 @@ public class PlayerCombat : MonoBehaviour
 
     private void Awake()
     {
+        _isDead = false;
         animator = GetComponent<Animator>();
         _hasDamageBoost = false;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canHit)
+        if (!_isDead)
         {
-            if (Time.time - lastClickedTime <= doubleClickThreshold)
+            if (Input.GetMouseButtonDown(0) && canHit)
             {
-                animator.SetBool("IsAttackingTwice", !animator.GetBool("IsAttackingTwice"));
-            }
-            else
-            {
-                animator.SetBool("IsAttackingTwice", false);
+                if (Time.time - lastClickedTime <= doubleClickThreshold)
+                {
+                    animator.SetBool("IsAttackingTwice", !animator.GetBool("IsAttackingTwice"));
+                }
+                else
+                {
+                    animator.SetBool("IsAttackingTwice", false);
+                }
+
+                StartCoroutine(EnableHitboxTemporarily());
+                animator.SetBool("IsAttacking", true);
+                isAttacking = true;
+                lastClickedTime = Time.time;
+
+                if (attackSound != null)
+                {
+                    attackSound.Play();
+                }
             }
 
-            StartCoroutine(EnableHitboxTemporarily());
-            animator.SetBool("IsAttacking", true);
-            isAttacking = true;
-            lastClickedTime = Time.time;
-
-            if (attackSound != null)
+            if (Input.GetMouseButtonUp(0))
             {
-                attackSound.Play();
+                animator.SetBool("IsAttacking", false);
+                isAttacking = false;
+            }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                if (_knives > 0)
+                {
+                    SpawnKnife();
+                    _knives--;
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                if (_bombs > 0)
+                {
+                    DeployBomb();
+                }
             }
         }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            animator.SetBool("IsAttacking", false);
-            isAttacking = false;
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            if (_knives > 0)
-            {
-                SpawnKnife();
-                _knives--;
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            if (_bombs > 0)
-            {
-                DeployBomb();
-            }
-        }
+            
     }
 
     IEnumerator EnableHitboxTemporarily()
@@ -107,9 +114,19 @@ public class PlayerCombat : MonoBehaviour
 
     void Die()
     {
+        _isDead = true;
         animator.SetBool("IsDead", true);
         //script de oprire movement;
+        
         //gameObject.SetActive(false);
+        StartCoroutine(WaitForCharToDie());
+    }
+
+    IEnumerator WaitForCharToDie()
+    {
+        yield return new WaitForSeconds(2);
+        var sceneManagerScript = Resources.Load<GameObject>("SceneManagerObject").GetComponent<SceneManagerScript>();
+        sceneManagerScript.GoToDeathScreen();
     }
 
     public void SetHealth(int health_)
@@ -192,6 +209,11 @@ public class PlayerCombat : MonoBehaviour
         }
         bomb.GetComponent<Bomb>().UseBomb();
         _bombs--;
+    }
+
+    public bool IsDead()
+    {
+        return _isDead;
     }
 
     void SpawnKnife()
