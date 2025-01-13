@@ -57,6 +57,7 @@ public class ScoreManager : MonoBehaviour
 
     void EndGame()
     {
-        SceneManager.LoadScene("Menu");
+        var prefab = Resources.Load<GameObject>("SceneManagerObject");
+        prefab.GetComponent<SceneManagerScript>().GoToLevel3();
     }
 }

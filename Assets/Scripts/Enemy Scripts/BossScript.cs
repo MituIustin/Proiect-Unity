@@ -10,7 +10,7 @@ public class BossScript : MonoBehaviour
     public GameObject energyBallPrefab;
     public float energyBallSpeed = 10f;
     public float attackCooldown = 2f;
-    public int attackDamage = 10;
+    public int attackDamage = 5;
     public float movementCooldown = 3f;
 
     private Transform player;
@@ -21,11 +21,14 @@ public class BossScript : MonoBehaviour
     private float lastAttackTime = 0f;
     private float lastMoveTime = 0f;
 
+    bool _isDead;
+
     public GameObject banana;
 
     void Start()
     {
         StartCoroutine(DelayedStart());
+        _isDead = false;
     }
 
     IEnumerator DelayedStart()
@@ -38,30 +41,33 @@ public class BossScript : MonoBehaviour
     void Update()
     {
         if (player == null) return;
-
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (!isMoving && Time.time >= lastMoveTime + movementCooldown)
+        if (!_isDead)
         {
-            if (distanceToPlayer > maintainRange)
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+            if (!isMoving && Time.time >= lastMoveTime + movementCooldown)
             {
-                isMoving = true;
-                StartCoroutine(MoveTowardsPlayer());
+                if (distanceToPlayer > maintainRange)
+                {
+                    isMoving = true;
+                    StartCoroutine(MoveTowardsPlayer());
+                }
+                else if (distanceToPlayer < maintainRange)
+                {
+                    isMoving = true;
+                    StartCoroutine(MoveAwayFromPlayer());
+                }
+                lastMoveTime = Time.time;
             }
-            else if (distanceToPlayer < maintainRange)
+            else
             {
-                isMoving = true;
-                StartCoroutine(MoveAwayFromPlayer());
+                if (!isAttacking && !isMoving)
+                {
+                    AttackLogic();
+                }
             }
-            lastMoveTime = Time.time;
         }
-        else
-        {
-            if (!isAttacking && !isMoving)
-            {
-                AttackLogic();
-            }
-        }
+            
     }
 
 
@@ -172,9 +178,10 @@ public class BossScript : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount;
-        if (health <= 0)
+        if (health <= 0 && !_isDead)
         {
             Die();
+            _isDead = true;
         }
         else
         {

@@ -17,7 +17,7 @@ public class RangedEnemy : MonoBehaviour
     private bool facingRight = true;
     private float lastAttackTime = 0f;
     public float attackCooldown = 1.5f;
-    public int attackDamage = 5;
+    public int attackDamage = 2;
     private SpriteRenderer spriteRenderer;
 
     public GameObject healthPotion;

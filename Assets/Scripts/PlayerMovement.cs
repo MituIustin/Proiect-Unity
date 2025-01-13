@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     float dashCooldown = 1.5f;
     float dashCooldownTimer = 1.5f;
 
+    bool _isDead;
+
     bool isDashing = false;
     bool canDash = true;
 
@@ -51,48 +53,52 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-
-        bool isRunning = (horizontal != 0) || (vertical != 0);
-        animator.SetBool("IsRunning", isRunning);
-
-        if (horizontal < 0)
+        if (!playerCombat.IsDead())
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f); 
-        }
-        else if (horizontal > 0)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f); 
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+
+            bool isRunning = (horizontal != 0) || (vertical != 0);
+            animator.SetBool("IsRunning", isRunning);
+
+            if (horizontal < 0)
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else if (horizontal > 0)
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+
+            direction = new Vector3(horizontal, 0, vertical).normalized;
+            direction.x *= movementSpeedHorizontal;
+            direction.z *= movementSpeedVertical;
+
+            if (!canDash)
+            {
+                dashCooldownTimer += Time.deltaTime;
+            }
+
+            if (dashCooldownTimer >= dashCooldown)
+            {
+                canDash = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && canDash)
+            {
+                dashDirection = direction;
+                playerCombat.SetCanHit(false);
+                StartCoroutine(Dash());
+            }
+
+            if (Input.GetKeyDown(KeyCode.P) && !PauseMenu())
+            {
+                Instantiate(PauseMenuPrefab);
+                SetUI(false);
+                SetPauseMenu(true);
+            }
         }
 
-        direction = new Vector3(horizontal, 0, vertical).normalized;
-        direction.x *= movementSpeedHorizontal;
-        direction.z *= movementSpeedVertical;
-
-        if (!canDash)
-        {
-            dashCooldownTimer += Time.deltaTime;
-        }
-
-        if (dashCooldownTimer >= dashCooldown)
-        {
-            canDash = true;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && canDash)
-        {
-            dashDirection = direction;
-            playerCombat.SetCanHit(false);
-            StartCoroutine(Dash());
-        }
-
-        if (Input.GetKeyDown(KeyCode.P) && !PauseMenu())
-        {
-            Instantiate(PauseMenuPrefab);
-            SetUI(false);
-            SetPauseMenu(true);
-        }
     }
 
     private IEnumerator Dash()

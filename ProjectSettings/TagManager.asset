@@ -23,6 +23,7 @@ TagManager:
   - damageUI
   - speedUI
   - Ground
+  - minigameDoor
   layers:
   - Default
   - TransparentFX

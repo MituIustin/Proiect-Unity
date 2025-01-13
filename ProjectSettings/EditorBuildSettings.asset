@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1CutScene.unity
     guid: 4fc897b203f38e64799fcd061c23eeed
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: 1707741c46f1b3f4aaad40768eb5e7e6
+  - enabled: 1
+    path: Assets/Scenes/FinalCutScene.unity
+    guid: 12e5b26b374508e4aab7c28b41779c03
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 901ae19f7c0ef964f9d777d611f52338
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

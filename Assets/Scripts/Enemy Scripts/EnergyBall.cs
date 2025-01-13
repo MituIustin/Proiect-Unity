@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnergyBall : MonoBehaviour
 {
     public float lifetime = 5f;
-    public int damage = 15;
+    public int damage = 6;
     private Animator animator;
     private Rigidbody rb;
     private bool isCollided = false;

@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class EnemySpawner : MonoBehaviour
     public GameObject _enemy3;
     bool _pauseSpawning;
     int _spawned;
+    string _sceneName;
+    int _radius;
 
     void Start()
     {
@@ -20,6 +23,12 @@ public class EnemySpawner : MonoBehaviour
         _spawned = 0;
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        _sceneName= SceneManager.GetActiveScene().name;
+
+        if (_sceneName == "FirstLevel")
+            _radius = 30;
+        else
+            _radius = 50;
     }
 
     void Update()
@@ -39,8 +48,12 @@ public class EnemySpawner : MonoBehaviour
 
     bool IsOutOfMap(Vector3 postion)
     {
-        return (postion.z < -15) || (postion.z > 0)
-                || (postion.x > 50) || (postion.x < 5);
+        if(_sceneName == "FirstLevel")
+            return (postion.z < -15) || (postion.z > 0)
+                    || (postion.x > 50) || (postion.x < 5);
+        else
+            return (postion.z < -1.5) || (postion.z > 6)
+                    || (postion.x > 50) || (postion.x < 13);
     }
     bool IsVisible(Vector3 worldPosition)
     {
@@ -61,7 +74,7 @@ public class EnemySpawner : MonoBehaviour
             Vector3 spawnPosition;
             do
             {
-                spawnPosition = _player.transform.position + Random.insideUnitSphere * 20;
+                spawnPosition = _player.transform.position + Random.insideUnitSphere * _radius;
                 spawnPosition.y = _player.transform.position.y; 
             } while (IsVisible(spawnPosition));
 
