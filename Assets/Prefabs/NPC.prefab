@@ -185,10 +185,10 @@ MonoBehaviour:
     hides it\u2026 though you may discover more than just a name.  "
   - Go, Dirmoh. Time is against us. The fate of Veldoh rests in your hands.  Reggin
     nods, his eyes gleaming with urgency, as he gestures toward the path ahead.
-  wordspeed: 0.01
+  wordspeed: 0.005
   playerInRange: 0
   interactText: {fileID: 0}
-  typingSound: {fileID: 0}
+  typingSound: {fileID: 2251006569197490067}
 --- !u!82 &2251006569197490067
 AudioSource:
   m_ObjectHideFlags: 0

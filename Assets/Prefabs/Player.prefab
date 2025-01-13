@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 4264677186499789740, guid: 9249c6ae4369eae4b99347ef1c87f940, type: 3}
+  PauseMenuPrefab: {fileID: 0}
 --- !u!114 &-5259758723827115998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,9 +313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordHitbox: {fileID: 2450888888580655092}
-  _knifePrefab: {fileID: 0}
-  _bombPrefab: {fileID: 0}
-  attackSound: {fileID: 0}
+  _knifePrefab: {fileID: 1395236411646956905, guid: 1a339494977ebcf4ba00d813aaf8df76, type: 3}
+  _bombPrefab: {fileID: 660924389822503522, guid: a91f4db17b56b02488205ebaf2810655, type: 3}
+  attackSound: {fileID: 5700481128252297614}
 --- !u!82 &5700481128252297614
 AudioSource:
   m_ObjectHideFlags: 0
